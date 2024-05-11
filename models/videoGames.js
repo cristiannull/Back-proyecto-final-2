@@ -1,32 +1,42 @@
 import mongoose from "../config/mongoose.config.js";
 
 const videoGamesSchema = mongoose.Schema({
-    name: String, 
-    category: [{
-        type: mongoose.Types.ObjectId, 
-        ref: "Category"
-    }],
-    pegi: [{
-        type: mongoose.Types.ObjectId, 
-        ref: "Pegi"
-    }],
-    gender: [{
-        type: mongoose.Types.ObjectId, 
-        ref: "Gender"
-    }],
-    theme: [{
-        type: mongoose.Types.ObjectId, 
-        ref: "Theme"
-    }],
-    
-    image: [{
-        tipe: mongoose.Types.ObjectId,
-        ref:"Image"
-    }],
-    price: Number,
-    description: String
-})
+  name: String,
+  price: Number,
+  description: String,
+  category: [
+    {
+      type: mongoose.Types.ObjectId,
+      ref: "Category",
+    },
+  ],
+  pegi: [
+    {
+      type: mongoose.Types.ObjectId,
+      ref: "Pegi",
+    },
+  ],
+  gender: [
+    {
+      type: mongoose.Types.ObjectId,
+      ref: "Gender",
+    },
+  ],
+  theme: [
+    {
+      type: mongoose.Types.ObjectId,
+      ref: "Theme",
+    },
+  ],
+
+  image: [
+    {
+      type: mongoose.Types.ObjectId,
+      ref: "Image",
+    },
+  ],
+});
 
 const VideoGames = mongoose.model("VideoGames", videoGamesSchema);
 
-export default VideoGames
+export default VideoGames;
