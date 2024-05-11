@@ -53,7 +53,7 @@ async function update(req, res) {
     usuarioEncontrado.rol = req.body.rol || usuarioEncontrado.rol;
 
     await usuarioEncontrado.save();
-    res.json(usuarioEncontrado);
+    res.status(200).json(usuarioEncontrado);
   } catch (err) {
     res.status(500).json("Error del Servidor");
   }
