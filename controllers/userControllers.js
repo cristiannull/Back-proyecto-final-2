@@ -1,8 +1,11 @@
 import User from "../models/users.js";
+import Rol from "../models/rols.js";
 import bcrypt from "bcryptjs";
 
 async function create(req, res) {
   try {
+    const rol = req.body.rol;
+    const nameRol = await Rol.findById(rol);
     const password = req.body.password;
     const hash = await bcrypt.hash(password, 10);
     const newUser = await User.create({
@@ -10,10 +13,11 @@ async function create(req, res) {
       lastname: req.body.lastname,
       email: req.body.email,
       password: hash,
-      rol: req.body.rol,
+      rol: nameRol,
     });
     res.json(newUser);
   } catch (err) {
+    console.log(err);
     res.status(500).json("error del servidor");
   }
 }
@@ -65,6 +69,20 @@ async function destroy(req, res) {
   }
 }
 
+async function login(req, res) {
+  const user = await User.findOne({ email: req.body.email });
+  if (user) {
+    const hashValido = await bcrypt.compare(req.body.password, user.password);
+    if (hashValido) {
+      res.json("Tus credenciales son correctas");
+    } else {
+      res.json("Tu email o contraseña son INCORRECTOS");
+    }
+  } else {
+    res.json("Tu email o contraseña son INCORRECTOS");
+  }
+}
+
 export default {
   create,
   find,
@@ -72,4 +90,5 @@ export default {
   list,
   update,
   destroy,
+  login,
 };
