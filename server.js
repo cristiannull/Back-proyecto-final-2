@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.use("/", userRoutes);
 app.use("/", rolRoutes);
-//prueba
+
 app.listen(3000, () => {
   console.log("el server esta listo port:3000");
 });
