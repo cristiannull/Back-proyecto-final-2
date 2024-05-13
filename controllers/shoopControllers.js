@@ -1,8 +1,8 @@
-import shoop from "../models/shoop.js";
+import Shoop from "../models/shoop.js";
 
 async function create(req, res) {
     try {
-      const newShop = await shoop.create({
+      const newShop = await Shoop.create({
         user: req.body.user,
         videogame: req.body.videogame,
         total: req.body.total,
@@ -17,7 +17,7 @@ async function create(req, res) {
   async function find(req, res) {
     try {
       const shoopId = req.params.id;
-      const shoop = await shoop.findById(shoopId).populate();
+      const shoop = await Shoop.findById(shoopId).populate("videogame user");
       res.status(200).json(shoop);
     } catch (err) {
       console.log(err);
@@ -27,7 +27,7 @@ async function create(req, res) {
   
   async function list(req, res) {
     try {
-      const shoopList = await shoop.find().populate();
+      const shoopList = await Shoop.find().populate("videogame user");
       res.status(200).json(shoopList);
     } catch (err) {
       res.status(500).json("Error del Servidor");
@@ -36,7 +36,7 @@ async function create(req, res) {
   
   async function update(req, res) {
     try {
-      const shoopEncontrado = await shoop.findById(req.params.id);
+      const shoopEncontrado = await Shoop.findById(req.params.id);
   
       shoopEncontrado.user = req.body.user|| shoopEncontrado.user;
       shoopEncontrado.videogame = req.body.videogame || shoopEncontrado.videogame;
@@ -51,8 +51,8 @@ async function create(req, res) {
   
   async function destroy(req, res) {
     try {
-      await shoop.findByIdAndDelete(req.params.id);
-      res.json("Compra elimidado");
+      await Shoop.findByIdAndDelete(req.params.id);
+      res.json("Compra elimidada");
     } catch (err) {
       console.log(err);
       res.status(500).json("Error del Servidor");

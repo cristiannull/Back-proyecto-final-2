@@ -17,7 +17,6 @@ async function create(req, res) {
     });
     res.json(newUser);
   } catch (err) {
-    console.log(err);
     res.status(500).json("error del servidor");
   }
 }
@@ -64,7 +63,6 @@ async function destroy(req, res) {
     await User.findByIdAndDelete(req.params.id);
     res.json("Usuario elimidado");
   } catch (err) {
-    console.log(err);
     res.status(500).json("Error del Servidor");
   }
 }
