@@ -24,7 +24,6 @@ async function find(req, res) {
     const game = await videoGame.findById(gameId).populate();
     res.status(200).json(game);
   } catch (err) {
-    console.log(err);
     res.status(500).json("error del servidor");
   }
 }
@@ -64,7 +63,6 @@ async function destroy(req, res) {
     await videoGame.findByIdAndDelete(req.params.id);
     res.json("Videojuego elimidado");
   } catch (err) {
-    console.log(err);
     res.status(500).json("Error del Servidor");
   }
 }

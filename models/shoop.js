@@ -11,7 +11,7 @@ const shoopSchema = mongoose.Schema({
     videogame: [
         {
             type: mongoose.Types.ObjectId,
-            ref: "Videogame",
+            ref: "VideoGames",
         }
     ],
 
