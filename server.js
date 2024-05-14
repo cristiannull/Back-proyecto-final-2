@@ -17,6 +17,8 @@ app.use("/", rolRoutes);
 app.use("/", videogameRoutes);
 app.use("/", categoryRoutes);
 app.use("/", developerRoutes);
+app.use("/", shoopRoutes);
+app.use("/", genderRoutes);
 app.listen(3000, () => {
   console.log("el server esta listo port:3000");
 });
