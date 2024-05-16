@@ -1,6 +1,7 @@
 import User from "../models/users.js";
 import Rol from "../models/rols.js";
 import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
 
 async function create(req, res) {
   try {
@@ -15,7 +16,7 @@ async function create(req, res) {
       password: hash,
       rol: nameRol,
     });
-    res.json(newUser);
+    res.json(await newUser.populate("rol"));
   } catch (err) {
     res.status(500).json("error del servidor");
   }
@@ -68,25 +69,46 @@ async function destroy(req, res) {
 }
 
 async function login(req, res) {
-  const user = await User.findOne({ email: req.body.email });
-  if (user) {
-    const hashValido = await bcrypt.compare(req.body.password, user.password);
-    if (hashValido) {
-      res.json("Tus credenciales son correctas");
+  try {
+    const user = await User.findOne({ email: req.body.email });
+    if (user) {
+      const hashValido = await bcrypt.compare(req.body.password, user.password);
+      if (hashValido) {
+        const tokenPayload = {
+          sub: user.id,
+          iat: Date.now(),
+        };
+        const token = jwt.sign(tokenPayload, process.env.JWT_SECRET);
+        res.json({ token: token });
+      } else {
+        res.json("Tu email o contraseña son INCORRECTOS");
+      }
     } else {
       res.json("Tu email o contraseña son INCORRECTOS");
     }
-  } else {
-    res.json("Tu email o contraseña son INCORRECTOS");
+  } catch (err) {
+    console.log(err);
+    res.status(500).json("Internal server error");
   }
+}
+
+async function profile(req, res) {
+  const { email } = await User.findById(req.auth.sub);
+  res.json(`Hola ${email}, te damos acceso a tu perfil`);
+}
+
+async function comprar(req, res) {
+  const { email } = await User.findById(req.auth.sub);
+  res.json(`Hola ${email}, puedes comprar cosas`);
 }
 
 export default {
   create,
   find,
   list,
-  list,
   update,
   destroy,
   login,
+  profile,
+  comprar,
 };
