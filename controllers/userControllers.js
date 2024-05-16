@@ -5,8 +5,6 @@ import jwt from "jsonwebtoken";
 
 async function create(req, res) {
   try {
-    const rol = req.body.rol;
-    const nameRol = await Rol.findById(rol);
     const password = req.body.password;
     const hash = await bcrypt.hash(password, 10);
     const newUser = await User.create({
@@ -14,10 +12,11 @@ async function create(req, res) {
       lastname: req.body.lastname,
       email: req.body.email,
       password: hash,
-      rol: nameRol,
+      rol: req.body.rol,
     });
     res.json(await newUser.populate("rol"));
   } catch (err) {
+    console.log(err);
     res.status(500).json("error del servidor");
   }
 }
