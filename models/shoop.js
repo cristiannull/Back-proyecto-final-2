@@ -8,14 +8,14 @@ const shoopSchema = mongoose.Schema({
         }
     ],
 
-    videogame: [
+    videogames: [
         {
             type: mongoose.Types.ObjectId,
             ref: "VideoGames",
         }
     ],
 
-    Total: Number,
+  total:Number,
 
     paymentMethod : [
         {

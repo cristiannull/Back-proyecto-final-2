@@ -35,6 +35,11 @@ const videoGamesSchema = mongoose.Schema({
       ref: "Image",
     },
   ],
+
+  developer:[{
+    type: mongoose.Types.ObjectId,
+    ref: "Developer",
+  }]
 });
 
 const VideoGames = mongoose.model("VideoGames", videoGamesSchema);

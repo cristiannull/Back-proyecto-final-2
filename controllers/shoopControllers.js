@@ -1,19 +1,28 @@
 import Shoop from "../models/shoop.js";
+import VideoGame from "../models/videoGames.js";
+import mongoose from "../config/mongoose.config.js";
 
-async function create(req, res) {
-    try {
+async function create(req, res) { 
+  try {
+    let total=0
+  for(const videogameId of req.body.videogames){
+   
+    const search = await VideoGame.findById(videogameId)
+    total= total + search.price
+    }
       const newShop = await Shoop.create({
         user: req.body.user,
-        videogame: req.body.videogame,
-        total: req.body.total,
+        videogames: req.body.videogames,
+        total: total,
         paymentMethod: req.body.paymentMethod,
       });
       res.json(newShop);
     } catch (err) {
+      console.log(err);
       res.status(500).json("error del servidor");
     }
   }
-  
+
   async function find(req, res) {
     try {
       const shoopId = req.params.id;
