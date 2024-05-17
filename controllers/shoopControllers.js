@@ -1,5 +1,5 @@
 import Shoop from "../models/Shoop.js";
-import VideoGame from "../models/videoGames.js";
+import VideoGame from "../models/VideoGame.js";
 
 async function create(req, res) {
   try {

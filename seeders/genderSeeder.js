@@ -1,18 +1,18 @@
 import Gender from "../models/Gender.js";
 
 await Gender.create({
-  _id: "66465f782c0beb46d5e3d881",
-  name: "admin",
+  _id: "6647c2afa55c56098a0045b5",
+  name: "simulation",
 });
 
 await Gender.create({
-  _id: "66465f7e2c0beb46d5e3d883",
-  name: "user",
+  _id: "6647c2b7a55c56098a0045b7",
+  name: "sport",
 });
 
 await Gender.create({
-  _id: "66465f872c0beb46d5e3d885",
-  name: "afiliado",
+  _id: "6647c2c0a55c56098a0045b9",
+  name: "terror",
 });
 
 console.log("generos creados exitocisimamente bien");

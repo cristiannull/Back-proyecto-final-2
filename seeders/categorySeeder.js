@@ -1,18 +1,18 @@
 import Category from "../models/Category.js";
 
 await Category.create({
-  _id: "66465f782c0beb46d5e3d881",
-  name: "admin",
+  _id: "6647baff9c8f74c7a883b5b0",
+  name: "solitary",
 });
 
 await Category.create({
-  _id: "66465f7e2c0beb46d5e3d883",
-  name: "user",
+  _id: "6647bb2e9c8f74c7a883b5b2",
+  name: "family",
 });
 
 await Category.create({
-  _id: "66465f872c0beb46d5e3d885",
-  name: "afiliado",
+  _id: "6647bb759c8f74c7a883b5b4",
+  name: "multiplayer",
 });
 
 console.log("categorias creadas exitocisimamente bien");
