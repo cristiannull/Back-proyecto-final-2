@@ -1,4 +1,4 @@
-import Rol from "../models/rols.js";
+import Rol from "../models/Role.js";
 
 async function create(req, res) {
   try {

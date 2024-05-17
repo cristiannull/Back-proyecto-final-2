@@ -1,4 +1,4 @@
-import Gender from "../models/gender.js";
+import Gender from "../models/Gender.js";
 
 async function create(req, res) {
   try {

@@ -1,4 +1,4 @@
-import Rol from "../models/rols.js";
+import Rol from "../models/Role.js";
 
 await Rol.create({
   _id: "66465f782c0beb46d5e3d881",

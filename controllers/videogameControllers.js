@@ -1,4 +1,4 @@
-import videoGame from "../models/videoGames.js";
+import videoGame from "../models/VideoGame.js";
 
 async function create(req, res) {
   try {

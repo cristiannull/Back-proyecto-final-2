@@ -1,4 +1,4 @@
-import Developer from "../models/developer.js";
+import Developer from "../models/Developer.js";
 
 async function create(req, res) {
   try {
@@ -60,4 +60,3 @@ export default {
   update,
   destroy,
 };
-  
