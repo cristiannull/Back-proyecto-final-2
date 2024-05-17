@@ -1,6 +1,5 @@
 import Shoop from "../models/shoop.js";
 import VideoGame from "../models/videoGames.js";
-import mongoose from "../config/mongoose.config.js";
 
 async function create(req, res) { 
   try {
