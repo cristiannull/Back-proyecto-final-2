@@ -21,7 +21,7 @@ await VideoGame.create({
     gender: "",
     theme: "",
     image:"",  */
-  price: "60",
+  price: "59",
   description:
     "Un juego de acción y aventura que sigue la historia de Kratos, un guerrero espartano, en su búsqueda de venganza contra los dioses griegos. La serie es famosa por su combate intenso y narración épica.",
 });

@@ -16,7 +16,6 @@ async function create(req, res) {
     });
     res.json(newShop);
   } catch (err) {
-    console.log(err);
     res.status(500).json("error del servidor");
   }
 }
@@ -27,7 +26,6 @@ async function find(req, res) {
     const shoop = await Shoop.findById(shoopId).populate("videogame user");
     res.status(200).json(shoop);
   } catch (err) {
-    console.log(err);
     res.status(500).json("error del servidor");
   }
 }
@@ -62,7 +60,6 @@ async function destroy(req, res) {
     await Shoop.findByIdAndDelete(req.params.id);
     res.json("Compra elimidada");
   } catch (err) {
-    console.log(err);
     res.status(500).json("Error del Servidor");
   }
 }

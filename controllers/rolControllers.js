@@ -48,7 +48,7 @@ async function destroy(req, res) {
     await Rol.findByIdAndDelete(req.param.id);
     res.status(200).json("Rol eliminado");
   } catch (err) {
-    res.status(500).json("Error del servidor");
+    res.status(500).json("Error del servidor :(");
   }
 }
 

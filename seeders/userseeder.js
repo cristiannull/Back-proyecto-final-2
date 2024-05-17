@@ -1,4 +1,4 @@
-import User from "../models/Users.js";
+import User from "../models/User.js";
 import bcrypt from "bcryptjs";
 
 async function seedUsers() {
@@ -32,7 +32,7 @@ async function seedUsers() {
       firstname: "Lionel",
       lastname: "Messi",
       email: "lionelmessi@bobo.com",
-      password: "holamessi",
+      password: "holamesi",
       rol: "66465f7e2c0beb46d5e3d883",
     },
     {

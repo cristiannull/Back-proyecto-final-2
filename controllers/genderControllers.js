@@ -7,7 +7,6 @@ async function create(req, res) {
     });
     res.json(newGender);
   } catch (err) {
-    console.log(err);
     res.status(500).json("Error del servidor");
   }
 }

@@ -1,5 +1,4 @@
-import User from "../models/users.js";
-import Rol from "../models/rols.js";
+import User from "../models/User.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
@@ -16,7 +15,6 @@ async function create(req, res) {
     });
     res.json(await newUser.populate("rol"));
   } catch (err) {
-    console.log(err);
     res.status(500).json("error del servidor");
   }
 }
@@ -86,7 +84,6 @@ async function login(req, res) {
       res.json("Tu email o contraseña son INCORRECTOS");
     }
   } catch (err) {
-    console.log(err);
     res.status(500).json("Internal server error");
   }
 }

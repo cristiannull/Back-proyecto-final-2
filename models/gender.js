@@ -4,6 +4,6 @@ const genderSchema = mongoose.Schema({
   name: String,
 });
 
-const gender = mongoose.model("Gender", genderSchema);
+const Gender = mongoose.model("Gender", genderSchema);
 
-export default gender;
+export default Gender;

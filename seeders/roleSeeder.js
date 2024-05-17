@@ -15,4 +15,4 @@ await Rol.create({
   name: "afiliado",
 });
 
-console.log("Roles creados exitocisimamente");
+console.log("Roles creados exitocisimamente bien");

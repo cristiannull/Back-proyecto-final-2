@@ -7,7 +7,6 @@ async function create(req, res) {
     });
     res.json(newDeveloper);
   } catch (err) {
-    console.log(err);
     res.status(500).json("Error del servidor");
   }
 }

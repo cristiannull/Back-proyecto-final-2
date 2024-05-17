@@ -47,3 +47,5 @@ const videoGamesSchema = mongoose.Schema({
 const VideoGames = mongoose.model("VideoGames", videoGamesSchema);
 
 export default VideoGames;
+
+//:()

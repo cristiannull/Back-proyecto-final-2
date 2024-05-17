@@ -7,7 +7,6 @@ async function create(req, res) {
     });
     res.json(newCategory);
   } catch (err) {
-    console.log(err);
     res.status(500).json("Error del servidor");
   }
 }
@@ -18,7 +17,6 @@ async function find(req, res) {
     const category = await Category.findById(categoryId);
     res.status(200).json(category);
   } catch (err) {
-    console.log(err);
     res.status(500).json("Error del servidor");
   }
 }

@@ -63,7 +63,7 @@ async function destroy(req, res) {
     await videoGame.findByIdAndDelete(req.params.id);
     res.json("Videojuego elimidado");
   } catch (err) {
-    res.status(500).json("Error del Servidor");
+    res.status(500).json("Error del Servidor :(");
   }
 }
 

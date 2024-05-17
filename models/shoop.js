@@ -28,3 +28,5 @@ const shoopSchema = mongoose.Schema({
 const ShoopSchema = mongoose.model("Shoop", shoopSchema);
 
 export default ShoopSchema;
+
+//:()
