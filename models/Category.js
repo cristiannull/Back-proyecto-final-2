@@ -4,6 +4,6 @@ const categorySchema = mongoose.Schema({
   name: String,
 });
 
-const category = mongoose.model("Category", categorySchema);
+const Category = mongoose.model("Category", categorySchema);
 
-export default category;
+export default Category;

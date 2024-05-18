@@ -20,8 +20,12 @@ app.use("/", categoryRoutes);
 app.use("/", developerRoutes);
 app.use("/", shoopRoutes);
 app.use("/", genderRoutes);
+<<<<<<< HEAD
 app.use("/", pegiRoutes);
 app.use("/", themeRoutes);
+=======
+
+>>>>>>> 6fc0960aa4372414ea90d53945557640c974b10c
 app.listen(3000, () => {
   console.log("el server esta listo port:3000");
 });

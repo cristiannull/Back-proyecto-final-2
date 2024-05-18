@@ -1,4 +1,4 @@
-import videoGame from "../models/videoGames.js";
+import videoGame from "../models/VideoGame.js";
 
 async function create(req, res) {
   try {
@@ -63,7 +63,7 @@ async function destroy(req, res) {
     await videoGame.findByIdAndDelete(req.params.id);
     res.json("Videojuego elimidado");
   } catch (err) {
-    res.status(500).json("Error del Servidor");
+    res.status(500).json("Error del Servidor :(");
   }
 }
 

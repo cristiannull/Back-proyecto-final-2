@@ -1,4 +1,4 @@
-import Developer from "../models/developer.js";
+import Developer from "../models/Developer.js";
 
 async function create(req, res) {
   try {
@@ -7,7 +7,6 @@ async function create(req, res) {
     });
     res.json(newDeveloper);
   } catch (err) {
-    console.log(err);
     res.status(500).json("Error del servidor");
   }
 }
@@ -60,4 +59,3 @@ export default {
   update,
   destroy,
 };
-  

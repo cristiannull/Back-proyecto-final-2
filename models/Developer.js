@@ -4,6 +4,6 @@ const developerSchema = mongoose.Schema({
   name: String,
 });
 
-const developer = mongoose.model("developer", developerSchema);
+const Developer = mongoose.model("Developer", developerSchema);
 
-export default developer;
+export default Developer;
