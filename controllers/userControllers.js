@@ -11,10 +11,12 @@ async function create(req, res) {
       lastname: req.body.lastname,
       email: req.body.email,
       password: hash,
+      age: req.body.age,
       rol: req.body.rol,
     });
     res.json(await newUser.populate("rol"));
   } catch (err) {
+    console.log(err);
     res.status(500).json("error del servidor");
   }
 }

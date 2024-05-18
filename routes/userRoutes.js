@@ -2,10 +2,17 @@ import express from "express";
 import userControllers from "../controllers/userControllers.js";
 import { expressjwt } from "express-jwt";
 import "dotenv/config";
+import userValidations from "../middlewares/validateUser.js";
+import errorsIsEmpty from "../middlewares/errorsIsEmpty.js";
 
 const router = express.Router();
 
-router.post("/api/users", userControllers.create);
+router.post(
+  "/api/users",
+  userValidations,
+  errorsIsEmpty,
+  userControllers.create
+);
 router.get(
   "/api/users/:id",
   expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),

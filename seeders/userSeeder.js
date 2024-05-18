@@ -9,6 +9,7 @@ async function seedUsers() {
       lastname: "Milanesa",
       email: "milanesapepe@pep.com",
       password: "contraseña esperada",
+      age: 20,
       rol: "66465f782c0beb46d5e3d881",
     },
     {
@@ -17,6 +18,7 @@ async function seedUsers() {
       lastname: "McDonald",
       email: "ronaldmcdonal@mcdonals.com",
       password: "holaronald",
+      age: 17,
       rol: "66465f782c0beb46d5e3d881",
     },
     {
@@ -25,6 +27,7 @@ async function seedUsers() {
       lastname: "Ronaldo",
       email: "cristianoronaldo@suuu.com",
       password: "holacristiano",
+      age: 39,
       rol: "66465f7e2c0beb46d5e3d883",
     },
     {
@@ -33,6 +36,7 @@ async function seedUsers() {
       lastname: "Messi",
       email: "lionelmessi@bobo.com",
       password: "holamesi",
+      age: 36,
       rol: "66465f7e2c0beb46d5e3d883",
     },
     {
@@ -41,6 +45,7 @@ async function seedUsers() {
       lastname: "Maradona",
       email: "diegomaradona@coca.com",
       password: "holadiego",
+      age: 70,
       rol: "66465f7e2c0beb46d5e3d883",
     },
     {
@@ -49,6 +54,7 @@ async function seedUsers() {
       lastname: "Jackson",
       email: "michaeljackson@hehe.com",
       password: "holamichael",
+      age: 50,
       rol: "66465f872c0beb46d5e3d885",
     },
     {
@@ -57,6 +63,7 @@ async function seedUsers() {
       lastname: "Gates",
       email: "billgates@microsoft.com",
       password: "holabill",
+      age: 64,
       rol: "66465f872c0beb46d5e3d885",
     },
     {
@@ -65,6 +72,7 @@ async function seedUsers() {
       lastname: "Musk",
       email: "elonmusk@tesla.com",
       password: "holaelon",
+      age: 45,
       rol: "66465f872c0beb46d5e3d885",
     },
     {
@@ -73,6 +81,7 @@ async function seedUsers() {
       lastname: "Simpson",
       email: "homerosimpson@dou.com",
       password: "holahomero",
+      age: 46,
       rol: "66465f7e2c0beb46d5e3d883",
     },
     {
@@ -81,6 +90,7 @@ async function seedUsers() {
       lastname: "Backyardigans",
       email: "pablobackyardigans@discobery.com",
       password: "holapablo",
+      age: 16,
       rol: "66465f7e2c0beb46d5e3d883",
     },
   ];
