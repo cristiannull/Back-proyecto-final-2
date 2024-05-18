@@ -14,7 +14,7 @@ async function create(req, res) {
       total: total,
       paymentMethod: req.body.paymentMethod,
     });
-    res.json(newShop);
+    res.json(await newShop.populate("user videogames paymentMethod"));
   } catch (err) {
     res.status(500).json("error del servidor");
   }

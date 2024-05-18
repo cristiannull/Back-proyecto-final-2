@@ -1,13 +1,15 @@
 import shoopControllers from "../controllers/shoopControllers.js";
 import express from "express";
 import { expressjwt } from "express-jwt";
+import shoopValidations from "../middlewares/validateShoop.js";
+import errorsIsEmpty from "../middlewares/errorsIsEmpty.js";
 import "dotenv/config";
 
 const router = express.Router();
 
 router.post(
   "/api/shoop",
-  expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),
+  expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),shoopValidations,errorsIsEmpty,
   shoopControllers.create
 );
 

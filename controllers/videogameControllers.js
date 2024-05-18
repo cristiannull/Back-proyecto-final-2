@@ -8,12 +8,14 @@ async function create(req, res) {
       pegi: req.body.pegi,
       gender: req.body.gender,
       theme: req.body.theme,
-      image: req.body.image,
+      image:  req.file.filename,
       price: req.body.price,
+      developer: req.body.developer,
       description: req.body.description,
     });
-    res.json(newGame);
+    res.json(await newGame.populate("category pegi gender theme developer"));
   } catch (err) {
+    console.log(err);
     res.status(500).json("error del servidor");
   }
 }

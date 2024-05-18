@@ -4,6 +4,7 @@ const shoopSchema = mongoose.Schema({
   user: [
     {
       type: mongoose.Types.ObjectId,
+      required: true,
       ref: "User",
     },
   ],
@@ -11,6 +12,7 @@ const shoopSchema = mongoose.Schema({
   videogames: [
     {
       type: mongoose.Types.ObjectId,
+      required: true,
       ref: "VideoGames",
     },
   ],
@@ -20,6 +22,7 @@ const shoopSchema = mongoose.Schema({
   paymentMethod: [
     {
       type: mongoose.Types.ObjectId,
+      required: true,
       ref: "PaymentMethod",
     },
   ],
