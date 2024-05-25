@@ -1,9 +1,10 @@
 import categoryControllers from "../controllers/categoryControllers.js";
 import express from "express";
-
+import categoryValidations from "../middlewares/validateCategory.js";
+import errorsIsEmpty from "../middlewares/errorsIsEmpty.js"
 const router = express.Router();
 
-router.post("/api/category", categoryControllers.create);
+router.post("/api/category",categoryValidations, errorsIsEmpty, categoryControllers.create);
 router.get("/api/category/:id", categoryControllers.find);
 router.patch("/api/category/:id", categoryControllers.update);
 router.get("/api/categorys", categoryControllers.list);

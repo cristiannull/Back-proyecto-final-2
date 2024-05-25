@@ -1,9 +1,10 @@
 import genderControllers from "../controllers/genderControllers.js";
 import express from "express";
-
+import genderValidations from "../middlewares/validategender.js";
+import errorsIsEmpty from "../middlewares/errorsIsEmpty.js"
 const router = express.Router();
 
-router.post("/api/gender", genderControllers.create);
+router.post("/api/gender",genderValidations, errorsIsEmpty, genderControllers.create);
 router.get("/api/gender/:id", genderControllers.find);
 router.patch("/api/gender/:id", genderControllers.update);
 router.get("/api/genders", genderControllers.list);
