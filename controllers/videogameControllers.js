@@ -8,7 +8,7 @@ async function create(req, res) {
       pegi: req.body.pegi,
       gender: req.body.gender,
       theme: req.body.theme,
-      image:  req.file.filename,
+      image: req.file.filename,
       price: req.body.price,
       developer: req.body.developer,
       description: req.body.description,
@@ -23,7 +23,9 @@ async function create(req, res) {
 async function find(req, res) {
   try {
     const gameId = req.params.id;
-    const game = await videoGame.findById(gameId).populate();
+    const game = await videoGame
+      .findById(gameId)
+      .populate("category pegi gender theme developer");
     res.status(200).json(game);
   } catch (err) {
     res.status(500).json("error del servidor");
@@ -32,8 +34,46 @@ async function find(req, res) {
 
 async function list(req, res) {
   try {
-    const gameList = await videoGame.find().populate();
-    res.status(200).json(gameList);
+    const { page = 1, limit = 5 } = req.query;
+
+    const options = {
+      page: parseInt(page, 10),
+      limit: parseInt(limit, 10),
+      populate: [
+        { path: "category" },
+        { path: "pegi" },
+        { path: "gender" },
+        { path: "theme" },
+        { path: "developer" },
+      ],
+    };
+
+    const skip = (options.page - 1) * options.limit;
+
+    const games = await videoGame
+      .find()
+      .populate(options.populate)
+      .skip(skip)
+      .limit(limit);
+
+    const totalItems = await videoGame.countDocuments();
+    const totalPages = Math.ceil(totalItems / limit);
+
+    // Construir enlace para la siguiente página si existe
+    let nextPage = null;
+    if (options.page < totalPages) {
+      nextPage = `/api/videogame?page=${options.page + 1}&limit=${limit}`;
+    }
+
+    res.status(200).json({
+      data: games,
+      pagination: {
+        totalItems,
+        totalPages,
+        currentPage: options.page,
+        nextPage,
+      },
+    });
   } catch (err) {
     res.status(500).json("Error del Servidor");
   }
