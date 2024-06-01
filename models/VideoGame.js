@@ -1,7 +1,7 @@
 import mongoose from "../config/mongoose.config.js";
 
 const videoGamesSchema = mongoose.Schema({
-  name:{
+  name: {
     type: String,
     required: true,
     unique: true,
@@ -47,13 +47,17 @@ const videoGamesSchema = mongoose.Schema({
     },
   ],
 
-  image: String,
-  
+  image: [
+    {
+      type: String,
+      required: true,
+    },
+  ],
 
   developer: [
     {
       type: mongoose.Types.ObjectId,
-        required: true,
+      required: true,
       ref: "Developer",
     },
   ],

@@ -8,8 +8,10 @@ await VideoGame.create({
   gender: "6647c2afa55c56098a0045b5",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
-  image:
+  image: [
     "https://m.media-amazon.com/images/M/MV5BMWE1NjRiMGEtMTUyMy00ODVkLWE2OWMtY2VjZjc3OGEwN2Q5XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg",
+    "https://cdn2.unrealengine.com/egs-social-rocketleague-news-1920x1080-1920x1080-975383433.jpg",
+  ],
   price: 0,
   description:
     "Un juego que combina el fútbol y los autos. Los jugadores controlan vehículos equipados con cohetes y compiten para marcar goles en una arena futurista. Es conocido por su jugabilidad rápida y adictiva.",
@@ -336,7 +338,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image:
-    "https://pics.filmaffinity.com/Call_of_Duty_Modern_Warfare-724589128-large.jpg",
+    "https://esports.as.com/2020/08/21/call-of-duty/Todas-portadas-Call-of-Duty_1384671549_481767_1024x1289.jpg",
   price: 60,
   description:
     "Un juego de disparos en primera persona que ofrece una intensa experiencia de combate moderno.",
@@ -440,7 +442,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image:
-    "https://th.bing.com/th/id/R.389bd5a435f6b407b6e9bb069f3cf5cf?rik=pyQcznBZg8gd6A&riu=http%3a%2f%2fgamepreorders.com%2fwp-content%2fuploads%2f2021%2f01%2fcover-art-2.jpg&ehk=tB8JjGWAO6%2bNVGMw1N1NYvCDGBzNQftzrIAPRDdguLg%3d&risl=&pid=ImgRaw&r=0",
+    "https://www.residentevil.com/village/ge/assets/images/common/share-gl.png",
   price: 60,
   description:
     "Un juego de terror y supervivencia que sigue la historia de Ethan Winters en un misterioso pueblo europeo.",
@@ -747,22 +749,26 @@ await VideoGame.create({
   gender: "6647c2afa55c56098a0045b5",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
-  image: "https://www.mobygames.com/images/covers/l/354283-hyper-light-drifter-playstation-4-front-cover.jpg",
+  image:
+    "https://www.mobygames.com/images/covers/l/354283-hyper-light-drifter-playstation-4-front-cover.jpg",
   price: 19.99,
-  description: "Un juego de rol de acción con un estilo visual retro y una narrativa mínima pero envolvente. Los jugadores exploran un mundo hermoso y desolado mientras combaten enemigos y descubren secretos."
+  description:
+    "Un juego de rol de acción con un estilo visual retro y una narrativa mínima pero envolvente. Los jugadores exploran un mundo hermoso y desolado mientras combaten enemigos y descubren secretos.",
 });
 
 await VideoGame.create({
   _id: "664695bacf29fe3266129148",
-    name: "Hollow Knight",
-    category: "6647bb759c8f74c7a883b5b4",
+  name: "Hollow Knight",
+  category: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
-    image: "https://th.bing.com/th/id/R.b79bdfea7e63169282d15f70c01cb41f?rik=8KxDkOSOn5Dcdg&pid=ImgRaw&r=0",
-    price: 14.99,
-    description: "Un juego de aventuras y plataformas en un mundo subterráneo de insectos. Es conocido por su exploración metroidvania, su atmósfera oscura y su detallado arte dibujado a mano."
+  image:
+    "https://th.bing.com/th/id/R.b79bdfea7e63169282d15f70c01cb41f?rik=8KxDkOSOn5Dcdg&pid=ImgRaw&r=0",
+  price: 14.99,
+  description:
+    "Un juego de aventuras y plataformas en un mundo subterráneo de insectos. Es conocido por su exploración metroidvania, su atmósfera oscura y su detallado arte dibujado a mano.",
 });
 
 console.log("Juegos creados exitosamente");
