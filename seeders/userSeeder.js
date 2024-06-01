@@ -101,6 +101,7 @@ async function seedUsers() {
   }
 
   console.log("Usuarios creados exitosamente");
+  process.exit();
 }
 
 seedUsers();

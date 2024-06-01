@@ -16,3 +16,4 @@ await Category.create({
 });
 
 console.log("categorias creadas exitocisimamente bien");
+process.exit();

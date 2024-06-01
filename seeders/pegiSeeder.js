@@ -16,14 +16,15 @@ await Pegi.create({
 });
 
 await Pegi.create({
-    _id: "66484727a7e41a4b4a090ac1",
-    name: "PEGI 16",
-  });
-  
-  await Pegi.create({
-    _id: "6648473ba7e41a4b4a090ac3",
-    name: "PEGI 18",
-  });
+  _id: "66484727a7e41a4b4a090ac1",
+  name: "PEGI 16",
+});
+
+await Pegi.create({
+  _id: "6648473ba7e41a4b4a090ac3",
+  name: "PEGI 18",
+});
 
 console.log("pegis creados exitocisimamente bien");
 
+process.exit();

@@ -53,3 +53,4 @@ for (let orderToCreate of ordersToCreate) {
     total: totalPrice,
   });
 }
+process.exit();

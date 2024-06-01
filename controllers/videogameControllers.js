@@ -34,7 +34,7 @@ async function find(req, res) {
 
 async function list(req, res) {
   try {
-    const { page = 1, limit = 5 } = req.query;
+    const { page = 1, limit = 50 } = req.query;
 
     const options = {
       page: parseInt(page, 10),
@@ -59,7 +59,6 @@ async function list(req, res) {
     const totalItems = await videoGame.countDocuments();
     const totalPages = Math.ceil(totalItems / limit);
 
-    // Construir enlace para la siguiente página si existe
     let nextPage = null;
     if (options.page < totalPages) {
       nextPage = `/api/videogame?page=${options.page + 1}&limit=${limit}`;

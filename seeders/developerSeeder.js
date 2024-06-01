@@ -16,3 +16,4 @@ await Developer.create({
 });
 
 console.log("desarrolladores creados exitocisimamente bien");
+process.exit();

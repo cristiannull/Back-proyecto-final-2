@@ -17,7 +17,7 @@ await VideoGame.create({
 
 await VideoGame.create({
   _id: "664695e8cf29fe32661290db",
-  name: "God of War",
+  name: "God of War Raganarok",
   category: "6647baff9c8f74c7a883b5b0",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
@@ -39,7 +39,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c916d5b0a90daa03fe2f",
   image:
-    "https://seagm-media.seagmcdn.com/game_480/204.jpg?x-oss-process=image/resize,w_360",
+    "https://assetsio.gnwcdn.com/co5u9i.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
   price: 0,
   description:
     "Una plataforma en línea que permite a los usuarios crear y compartir sus propios juegos y experiencias. Ofrece una gran variedad de géneros y estilos, con una comunidad activa que constantemente añade nuevo contenido.",
@@ -69,7 +69,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c929d5b0a90daa03fe31",
   image:
-    "https://static.wikia.nocookie.net/terraria/images/f/fc/Console_1.3.png/revision/latest?cb=20190903041935&path-prefix=es",
+    "https://images.g2a.com/300x400/1x1x1/terraria-steam-gift-global-i10000000238003/5ebbabf646177c06a555f152",
   price: 10,
   description:
     " Un juego de aventura y construcción en 2D. Los jugadores exploran, recolectan recursos, luchan contra monstruos y construyen estructuras en un mundo abierto. Es conocido por su profundidad y variedad de contenido.",
@@ -98,7 +98,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c916d5b0a90daa03fe2f",
   image:
-    "https://static.wikia.nocookie.net/thelastofus/images/f/fe/Portada_Parte_I_limpia.jpeg/revision/latest?cb=20211209015400&path-prefix=es",
+    "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/aZKLRcjaZ8HL03ODxYMZDfaH.png",
   price: 50,
   description:
     "Un juego de acción y aventura que sigue a Joel y Ellie en un viaje a través de un mundo postapocalíptico devastado por una infección fúngica. Es aclamado por su historia emotiva, personajes complejos y ambiente tenso.",
@@ -684,7 +684,7 @@ await VideoGame.create({
 await VideoGame.create({
   _id: "664695bacf29fe32661290f9",
   name: "Monster Hunter: World",
-  category: "6647bb759c8f74c7a883b5b4",
+  category: ["6647bb759c8f74c7a883b5b4", "6647baff9c8f74c7a883b5b0"],
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
   theme: "66484bf01593a60f58e0c0a3",
@@ -740,3 +740,4 @@ await VideoGame.create({
 });
 
 console.log("Juegos creados exitosamente");
+process.exit();

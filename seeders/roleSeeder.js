@@ -16,3 +16,4 @@ await Rol.create({
 });
 
 console.log("Roles creados exitocisimamente bien");
+process.exit();

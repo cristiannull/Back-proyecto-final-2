@@ -16,13 +16,14 @@ await PaymentMethod.create({
 });
 
 await PaymentMethod.create({
-    _id: "66484f9ed185e084c7b0b12c",
-    name: "visacard",
-  });
-  
-  await PaymentMethod.create({
-    _id: "66484fa8d185e084c7b0b12e",
-    name: "goldencard",
-  });
+  _id: "66484f9ed185e084c7b0b12c",
+  name: "visacard",
+});
+
+await PaymentMethod.create({
+  _id: "66484fa8d185e084c7b0b12e",
+  name: "goldencard",
+});
 
 console.log("paymentMethods creados exitocisimamente bien");
+process.exit();

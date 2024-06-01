@@ -16,3 +16,4 @@ await Gender.create({
 });
 
 console.log("generos creados exitocisimamente bien");
+process.exit();

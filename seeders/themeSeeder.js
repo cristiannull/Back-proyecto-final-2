@@ -16,13 +16,14 @@ await Theme.create({
 });
 
 await Theme.create({
-    _id: "66484c121593a60f58e0c0a7",
-    name: "mundo abierto",
-  });
-  
-  await Theme.create({
-    _id: "66484c191593a60f58e0c0a9",
-    name: "deportes",
-  });
+  _id: "66484c121593a60f58e0c0a7",
+  name: "mundo abierto",
+});
+
+await Theme.create({
+  _id: "66484c191593a60f58e0c0a9",
+  name: "deportes",
+});
 
 console.log("themes creados exitocisimamente bien");
+process.exit();
