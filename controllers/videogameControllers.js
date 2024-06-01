@@ -34,7 +34,7 @@ async function find(req, res) {
 
 async function list(req, res) {
   try {
-    const { page = 1, limit = 50 } = req.query;
+    const { page = 1, limit = 52 } = req.query;
 
     const options = {
       page: parseInt(page, 10),

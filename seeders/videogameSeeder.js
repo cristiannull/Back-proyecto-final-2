@@ -113,7 +113,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c929d5b0a90daa03fe31",
   image:
-    "https://static.wikia.nocookie.net/thelastofus/images/8/85/Portada_Parte_II_limpia.jpeg/revision/latest?cb=20211209014334&path-prefix=es",
+    "https://m.media-amazon.com/images/M/MV5BODUwNWY5YjctNDZkNy00ZTY1LWEzMzItZGVkYTllOWVjOTc3XkEyXkFqcGdeQXVyNjU4NTIxNzI@._V1_FMjpg_UX1000_.jpg",
   price: 65,
   description:
     "La secuela del primer juego, continúa la historia de Ellie en un viaje de venganza y redención. Mantiene la alta calidad en narrativa, jugabilidad y desarrollo de personajes.",
@@ -157,7 +157,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c929d5b0a90daa03fe31",
   image:
-    "https://static.wikia.nocookie.net/gearsofwar/images/8/87/Gears_of_War_2_Portada.png/revision/latest?cb=20160706021554&path-prefix=es",
+    "https://cdn.gearsofwar.com/gearsofwar/sites/9/2020/02/gears-of-war-2-5e4712bb05532-1024x1024.jpg",
   price: 10,
   description:
     "Un juego de disparos en tercera persona que sigue a un grupo de soldados conocidos como el Escuadrón Delta en su lucha contra una horda alienígena llamada Locust. Es famoso por su intensa acción, coberturas tácticas y narrativa cinematográfica.",
@@ -172,7 +172,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c929d5b0a90daa03fe31",
   image:
-    "https://static.wikia.nocookie.net/cod/images/b/ba/BO2_RP_Boxart.png/revision/latest?cb=20130728012855&path-prefix=es",
+    "https://m.media-amazon.com/images/I/81FK5l2lXjL._AC_UF1000,1000_QL80_.jpg",
   price: 15,
   description:
     " Un juego de disparos en primera persona ambientado en la Segunda Guerra Mundial. Ofrece varias campañas que siguen a soldados de diferentes naciones y es conocido por su autenticidad histórica y acción trepidante.",
@@ -351,7 +351,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image:
-    "https://static.wikia.nocookie.net/esgta/images/c/c2/Grand_Theft_Auto_San_Andreas.JPG/revision/latest?cb=20161127211015",
+    "https://i11b.3djuegos.com/juegos/1012/grand_theft_auto_san_andreas/fotos/ficha/grand_theft_auto_san_andreas-3785649.jpg",
   price: 30,
   description:
     "Un juego de acción y aventura en un mundo abierto donde el jugador puede explorar la ciudad de Los Santos y participar en diversas actividades.",
@@ -493,7 +493,7 @@ await VideoGame.create({
 
 await VideoGame.create({
   _id: "664695bacf29fe32661290ec",
-  name: "God of War",
+  name: "God of War 4",
   category: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
@@ -529,7 +529,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image:
-    "https://th.bing.com/th/id/OIP.pHGu6F8sd7tUyhh16X557wHaKj?w=115&h=180&c=7&r=0&o=5&pid=1.7",
+    "https://i5.walmartimages.com/asr/0ee378c4-0334-467c-83d5-f3dff13cadb8.506cbe2da96e3db0f4a90d36369b689b.jpeg",
   price: 60,
   description:
     "Un juego de rol japonés que sigue la vida de un grupo de estudiantes de secundaria con habilidades sobrenaturales.",
@@ -573,7 +573,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image:
-    "https://th.bing.com/th/id/OIP.2kLB_tNuUVNink9aMNl_qgHaHY?w=163&h=180&c=7&r=0&o=5&pid=1.7",
+    "https://external-preview.redd.it/eQDrGAx61Azyz9TARuuDVNrQavH3TSru-EvPZjTbTmU.jpg?auto=webp&s=78c39bb611859451f6332a5fab109d6fd330ec82",
   price: 60,
   description:
     "Un juego de carreras de karts con personajes de la serie Mario y varios modos de juego divertidos.",
@@ -588,7 +588,7 @@ await VideoGame.create({
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image:
-    "https://th.bing.com/th/id/R.d995230ecc0850cdaa55933fe562256e?rik=oG4zP6JMw6On4g&pid=ImgRaw&r=0",
+    "https://th.bing.com/th/id/OIP.1rIAUaR_Wwif2zOaWYhmQwHaJn?rs=1&pid=ImgDetMain",
   price: 50,
   description:
     "Un juego de acción y aventura en un mundo post-apocalíptico donde los jugadores cazan máquinas peligrosas.",
@@ -632,7 +632,7 @@ await VideoGame.create({
   gender: "6647c2afa55c56098a0045b5",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
-  image: "https://www.laps4.com/wp-content/uploads/2019/02/Celeste-portada.jpg",
+  image: "https://cdr.cz/sites/default/files/dark_souls_iii_-_image_01.jpg",
   price: 60,
   description:
     "Un desafiante juego de rol de acción con combates intensos y un mundo interconectado.",
@@ -646,7 +646,7 @@ await VideoGame.create({
   gender: "6647c2afa55c56098a0045b5",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
-  image: "",
+  image: "https://www.laps4.com/wp-content/uploads/2019/02/Celeste-portada.jpg",
   price: 20,
   description:
     "Un juego de plataformas desafiante donde el jugador debe ayudar a Madeline a escalar una montaña mientras enfrenta sus propios demonios.",
@@ -737,6 +737,32 @@ await VideoGame.create({
   price: 0,
   description:
     "Un juego de batalla real donde los jugadores compiten en equipos para ser los últimos en pie.",
+});
+
+await VideoGame.create({
+  _id: "664695bacf29fe3266129126",
+  name: "Hyper Light Drifter",
+  category: "6647bb759c8f74c7a883b5b4",
+  pegi: "6648473ba7e41a4b4a090ac3",
+  gender: "6647c2afa55c56098a0045b5",
+  theme: "66484bf01593a60f58e0c0a3",
+  developer: "6647c8f0d5b0a90daa03fe2d",
+  image: "https://www.mobygames.com/images/covers/l/354283-hyper-light-drifter-playstation-4-front-cover.jpg",
+  price: 19.99,
+  description: "Un juego de rol de acción con un estilo visual retro y una narrativa mínima pero envolvente. Los jugadores exploran un mundo hermoso y desolado mientras combaten enemigos y descubren secretos."
+});
+
+await VideoGame.create({
+  _id: "664695bacf29fe3266129148",
+    name: "Hollow Knight",
+    category: "6647bb759c8f74c7a883b5b4",
+  pegi: "6648473ba7e41a4b4a090ac3",
+  gender: "6647c2afa55c56098a0045b5",
+  theme: "66484bf01593a60f58e0c0a3",
+  developer: "6647c8f0d5b0a90daa03fe2d",
+    image: "https://th.bing.com/th/id/R.b79bdfea7e63169282d15f70c01cb41f?rik=8KxDkOSOn5Dcdg&pid=ImgRaw&r=0",
+    price: 14.99,
+    description: "Un juego de aventuras y plataformas en un mundo subterráneo de insectos. Es conocido por su exploración metroidvania, su atmósfera oscura y su detallado arte dibujado a mano."
 });
 
 console.log("Juegos creados exitosamente");
