@@ -61,6 +61,11 @@ const videoGamesSchema = mongoose.Schema({
       ref: "Developer",
     },
   ],
+
+  video: {
+    type: String,
+    
+  }
 });
 
 const VideoGames = mongoose.model("VideoGames", videoGamesSchema);

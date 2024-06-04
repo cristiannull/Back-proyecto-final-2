@@ -12,6 +12,7 @@ async function create(req, res) {
       price: req.body.price,
       developer: req.body.developer,
       description: req.body.description,
+      video: req.body.video
     });
     res.json(await newGame.populate("category pegi gender theme developer"));
   } catch (err) {
@@ -91,6 +92,7 @@ async function update(req, res) {
     gameEncontrado.price = req.body.price || gameEncontrado.price;
     gameEncontrado.description =
       req.body.description || gameEncontrado.description;
+      gameEncontrado.video = req.body.video|| gameEncontrado.video;
 
     await gameEncontrado.save();
     res.json(gameEncontrado);
