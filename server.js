@@ -9,6 +9,7 @@ import genderRoutes from "./routes/genderRoutes.js";
 import pegiRoutes from "./routes/pegiRoutes.js";
 import themeRoutes from "./routes/themeRoutes.js";
 import paymentMethodRoutes from "./routes/paymentMethodRoutes.js";
+import typeOfferRoutes from "./routes/typeOfferRoutes.js"
 import cors from "cors";
 
 const app = express();
@@ -26,6 +27,7 @@ app.use("/", genderRoutes);
 app.use("/", pegiRoutes);
 app.use("/", themeRoutes);
 app.use("/", paymentMethodRoutes);
+app.use("/", typeOfferRoutes)
 app.listen(3000, () => {
   console.log("el server esta listo port:3000");
 });

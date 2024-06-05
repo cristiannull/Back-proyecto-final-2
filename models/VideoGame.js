@@ -64,8 +64,13 @@ const videoGamesSchema = mongoose.Schema({
 
   video: {
     type: String,
-    
-  }
+    required: true,
+  },
+
+  typeoffer:[{
+   type:mongoose.Types.ObjectId,
+   ref:"TypeOffer",
+  }]
 });
 
 const VideoGames = mongoose.model("VideoGames", videoGamesSchema);

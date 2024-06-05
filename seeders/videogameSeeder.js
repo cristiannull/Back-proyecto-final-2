@@ -5,7 +5,7 @@ await VideoGame.create({
   name: "Rocket League",
   category: "6647bb759c8f74c7a883b5b4",
   pegi: "66484727a7e41a4b4a090ac1",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "6647c2b7a55c56098a0045b7",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -16,6 +16,7 @@ await VideoGame.create({
   price: 0,
   description:
     "Un juego que combina el fútbol y los autos. Los jugadores controlan vehículos equipados con cohetes y compiten para marcar goles en una arena futurista. Es conocido por su jugabilidad rápida y adictiva.",
+    typeoffer:"665fcb959953ee0ba1099486"
 });
 
 await VideoGame.create({
@@ -34,6 +35,7 @@ await VideoGame.create({
   price: 59,
   description:
     "Un juego de acción y aventura que sigue la historia de Kratos, un guerrero espartano, en su búsqueda de venganza contra los dioses griegos. La serie es famosa por su combate intenso y narración épica.",
+    typeoffer: "665fcb5e9953ee0ba1099484"
 });
 
 await VideoGame.create({
@@ -70,6 +72,7 @@ await VideoGame.create({
   price: 20,
   description:
     "Un juego de construcción y aventura donde los jugadores pueden explorar un mundo generado aleatoriamente, recolectar recursos y construir estructuras. Tiene modos de juego creativos y de supervivencia, fomentando la creatividad y la exploración.",
+    typeoffer: "665fcb5e9953ee0ba1099484"
 });
 
 await VideoGame.create({
@@ -124,6 +127,7 @@ await VideoGame.create({
   price: 50,
   description:
     "Un juego de acción y aventura que sigue a Joel y Ellie en un viaje a través de un mundo postapocalíptico devastado por una infección fúngica. Es aclamado por su historia emotiva, personajes complejos y ambiente tenso.",
+    typeoffer: "665fcb5e9953ee0ba1099484"
 });
 
 await VideoGame.create({
@@ -160,6 +164,7 @@ await VideoGame.create({
   price: 45,
   description:
     "Un juego de rol de acción ambientado en una metrópolis futurista llamada Night City. Los jugadores controlan a V, un mercenario en busca de un implante único que podría ser la clave para la inmortalidad. Es conocido por su inmersiva atmósfera y opciones de personalización.",
+    typeoffer: "665fcb5e9953ee0ba1099484"
 });
 
 await VideoGame.create({
@@ -232,6 +237,7 @@ await VideoGame.create({
   price: 50,
   description:
     "Un juego de rol de acción desarrollado por FromSoftware y George R.R. Martin. Promete un vasto mundo abierto lleno de peligros, combates desafiantes y una rica mitología, manteniendo la dificultad y diseño característicos de los juegos de FromSoftware.",
+    typeoffer:"665fcb959953ee0ba1099486"
 });
 
 await VideoGame.create({
@@ -250,6 +256,7 @@ await VideoGame.create({
   price: 20,
   description:
     "Un juego de acción y aventura en mundo abierto que sigue las historias entrelazadas de tres criminales en la ciudad ficticia de Los Santos. Es conocido por su vasta y detallada representación de la vida urbana, así como su jugabilidad diversa y narrativa humorística.",
+    typeoffer: "665fcb5e9953ee0ba1099484"
 });
 
 await VideoGame.create({
@@ -286,6 +293,7 @@ await VideoGame.create({
   price: 60,
   description:
     "Un juego de aventura en un mundo abierto donde el jugador explora Hyrule y lucha contra el malvado Ganon.",
+    typeoffer:"665fcb959953ee0ba1099486"
 });
 
 await VideoGame.create({
@@ -682,6 +690,7 @@ await VideoGame.create({
   price: 60,
   description:
     "Un juego de acción y aventura que sigue a un shinobi en su misión para rescatar a su señor y vengarse de sus enemigos.",
+    typeoffer:"665fcb959953ee0ba1099486"
 });
 
 await VideoGame.create({
@@ -736,6 +745,7 @@ await VideoGame.create({
   price: 20,
   description:
     "Un juego de rol y acción en un mundo gótico lleno de monstruos y secretos oscuros.",
+    typeoffer:"665fcb959953ee0ba1099486"
 });
 
 await VideoGame.create({
@@ -826,6 +836,7 @@ await VideoGame.create({
   price: 40,
   description:
     "Un juego de rol y acción que explora temas filosóficos a través de la historia de androides en un mundo post-apocalíptico.",
+    typeoffer:"665fcb959953ee0ba1099486"
 });
 
 await VideoGame.create({

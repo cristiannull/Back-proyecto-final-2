@@ -1,4 +1,6 @@
 import videoGame from "../models/VideoGame.js";
+import Typeoffer from "../models/TypeOffer.js";
+import Pegi from "../models/pegi.js";
 
 async function create(req, res) {
   try {
@@ -12,9 +14,10 @@ async function create(req, res) {
       price: req.body.price,
       developer: req.body.developer,
       description: req.body.description,
-      video: req.body.video
+      video: req.body.video,
+      typeoffer:req.body.typeoffer
     });
-    res.json(await newGame.populate("category pegi gender theme developer"));
+    res.json(await newGame.populate("category pegi gender theme developer typeoffer"));
   } catch (err) {
     console.log(err);
     res.status(500).json("error del servidor");
@@ -26,7 +29,7 @@ async function find(req, res) {
     const gameId = req.params.id;
     const game = await videoGame
       .findById(gameId)
-      .populate("category pegi gender theme developer");
+      .populate("category pegi gender theme developer typeoffer");
     res.status(200).json(game);
   } catch (err) {
     res.status(500).json("error del servidor");
@@ -46,13 +49,27 @@ async function list(req, res) {
         { path: "gender" },
         { path: "theme" },
         { path: "developer" },
+        { path: "typeoffer" },
       ],
     };
 
     const skip = (options.page - 1) * options.limit;
+    const where = {};
+
+    if (req.query.pegi) {
+      const pegi = await Pegi.findOne({name: req.query.pegi.toUpperCase()})
+      where.pegi = pegi.id;
+    }
+
+    if (req.query.typeoffer) {
+      const typeoffer= await Typeoffer.findOne({name: req.query.typeoffer.toUpperCase()})
+      where.typeoffer = typeoffer.id;
+    }
+
+    
 
     const games = await videoGame
-      .find()
+      .find(where)
       .populate(options.populate)
       .skip(skip)
       .limit(limit);
@@ -75,6 +92,7 @@ async function list(req, res) {
       },
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json("Error del Servidor");
   }
 }
@@ -92,7 +110,8 @@ async function update(req, res) {
     gameEncontrado.price = req.body.price || gameEncontrado.price;
     gameEncontrado.description =
       req.body.description || gameEncontrado.description;
-      gameEncontrado.video = req.body.video|| gameEncontrado.video;
+    gameEncontrado.video = req.body.video || gameEncontrado.video;
+    gameEncontrado.typeoffer= req.body.typeoffer || gameEncontrado.typeoffer
 
     await gameEncontrado.save();
     res.json(gameEncontrado);

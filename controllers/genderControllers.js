@@ -23,8 +23,8 @@ async function find(req, res) {
 
 async function list(req, res) {
   try {
-    const gameList = await Gender.find();
-    res.status(200).json(gameList);
+    const genderList = await Gender.find();
+    res.status(200).json(genderList);
   } catch (err) {
     res.status(500).json("Error del servidor");
   }
