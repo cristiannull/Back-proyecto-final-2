@@ -1,13 +1,9 @@
 import mongoose from "../config/mongoose.config.js";
 
 const TypeOfferSchema = mongoose.Schema({
-    name: {
-      type: String,
-      required: true,
-      unique: true,
-    },
+    name:String,
   });
   
-  const Typeoffer = mongoose.model("TypeOffer", TypeOfferSchema);
+  const Typeoffer = mongoose.model("Typeoffer", TypeOfferSchema);
   
   export default Typeoffer;

@@ -62,11 +62,9 @@ async function list(req, res) {
     }
 
     if (req.query.typeoffer) {
-      const typeoffer= await Typeoffer.findOne({name: req.query.typeoffer.toUpperCase()})
+      const typeoffer= await Typeoffer.findOne({name: req.query.typeoffer})
       where.typeoffer = typeoffer.id;
     }
-
-    
 
     const games = await videoGame
       .find(where)
