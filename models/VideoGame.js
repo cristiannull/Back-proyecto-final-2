@@ -12,11 +12,13 @@ const videoGamesSchema = mongoose.Schema({
     required: true,
   },
 
-  description: {
-    type: String,
-    required: true,
-    unique: true,
-  },
+  description: [
+    {
+      type: String,
+      required: true,
+      unique: true,
+    },
+  ],
 
   category: [
     {
@@ -67,12 +69,12 @@ const videoGamesSchema = mongoose.Schema({
     required: true,
   },
 
-  typeoffer:[
+  typeoffer: [
     {
-   type:mongoose.Types.ObjectId,
-   ref:"Typeoffer",
-  }
-]
+      type: mongoose.Types.ObjectId,
+      ref: "Typeoffer",
+    },
+  ],
 });
 
 const VideoGames = mongoose.model("VideoGames", videoGamesSchema);
