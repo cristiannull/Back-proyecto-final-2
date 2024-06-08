@@ -33,7 +33,7 @@ router.delete(
   expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),
   userControllers.destroy
 );
-router.post("/api/users/login", userControllers.login);
+/* router.post("/api/users/login", userControllers.login); */
 router.post(
   "/api/users/profile",
   expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),

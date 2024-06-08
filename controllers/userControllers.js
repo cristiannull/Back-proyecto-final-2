@@ -67,7 +67,7 @@ async function destroy(req, res) {
   }
 }
 
-async function login(req, res) {
+/* async function login(req, res) {
   try {
     const user = await User.findOne({ email: req.body.email });
     if (user) {
@@ -88,7 +88,7 @@ async function login(req, res) {
   } catch (err) {
     res.status(500).json("Internal server error");
   }
-}
+} */
 
 async function profile(req, res) {
   const { email } = await User.findById(req.auth.sub);
@@ -106,7 +106,7 @@ export default {
   list,
   update,
   destroy,
-  login,
+  
   profile,
   comprar,
 };

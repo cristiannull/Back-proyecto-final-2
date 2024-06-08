@@ -12,11 +12,13 @@ const videoGamesSchema = mongoose.Schema({
     required: true,
   },
 
-  description: {
-    type: String,
-    required: true,
-    unique: true,
-  },
+  description: [
+    {
+      type: String,
+      required: true,
+      unique: true,
+    },
+  ],
 
   category: [
     {
@@ -59,6 +61,18 @@ const videoGamesSchema = mongoose.Schema({
       type: mongoose.Types.ObjectId,
       required: true,
       ref: "Developer",
+    },
+  ],
+
+  video: {
+    type: String,
+    required: true,
+  },
+
+  typeoffer: [
+    {
+      type: mongoose.Types.ObjectId,
+      ref: "Typeoffer",
     },
   ],
 });

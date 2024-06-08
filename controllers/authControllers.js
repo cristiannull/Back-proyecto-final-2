@@ -8,7 +8,16 @@ async function login(req, res) {
         return res.json({ token })
     } else {
         return res.status(404).json("Las credenciales no son válidas")
+        
+    }
+    
+}
+async function tokenIsValid(req, res) {
+    if (req.auth) {
+        return true
+    } else {
+        return false
     }
 }
 
-export default { login }
+export default { login,tokenIsValid }
