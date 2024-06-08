@@ -1,18 +1,21 @@
 import bcrypt from "bcryptjs";
 import mongoose from "../config/mongoose.config.js";
 
-const userloginSchema = mongoose.Schema({
-  firstname: String,
-  lastname: String,
-  email: String,
-  password: String,
-}, {
-  methods: {
-    async hashCompare(string) {
-      return bcrypt.compare(string, this.password)
-    }
+const userloginSchema = mongoose.Schema(
+  {
+    firstname: { type: String, required: true },
+    lastname: { type: String, required: true },
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
+  },
+  {
+    methods: {
+      async hashCompare(string) {
+        return bcrypt.compare(string, this.password);
+      },
+    },
   }
-});
+);
 
 userloginSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();

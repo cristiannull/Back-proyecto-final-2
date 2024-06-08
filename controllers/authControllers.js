@@ -1,23 +1,37 @@
+import User from "../models/User.js";
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import Userlogin from "../models/UserLogin.js"
 
 async function login(req, res) {
-    const userlogin = await Userlogin.findOne({ email: req.body.email })
-    if (userlogin && userlogin.hashCompare(req.body.password)) {
-        const token = jwt.sign({ id: userlogin.id }, process.env.JWT_SECRET)
-        return res.json({ token })
+  try {
+    const user = await User.findOne({ email: req.body.email });
+    if (user) {
+      const hashValido = await bcrypt.compare(req.body.password, user.password);
+      if (hashValido) {
+        const tokenPayload = {
+          sub: user.id,
+          iat: Date.now(),
+        };
+        const token = jwt.sign(tokenPayload, process.env.JWT_SECRET);
+        res.json({ token: token });
+      } else {
+        res.json("Tu email o contraseña son INCORRECTOS");
+      }
     } else {
-        return res.status(404).json("Las credenciales no son válidas")
-        
+      res.json("Tu email o contraseña son INCORRECTOS");
     }
-    
-}
-async function tokenIsValid(req, res) {
-    if (req.auth) {
-        return true
-    } else {
-        return false
-    }
+  } catch (err) {
+    res.status(500).json("Internal server error");
+    console.log(err);
+  }
 }
 
-export default { login,tokenIsValid }
+async function tokenIsValid(req, res) {
+  if (req.auth) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+export default { login, tokenIsValid };

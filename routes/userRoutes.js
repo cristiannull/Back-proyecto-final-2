@@ -4,7 +4,6 @@ import { expressjwt } from "express-jwt";
 import "dotenv/config";
 import userValidations from "../middlewares/validateUser.js";
 import errorsIsEmpty from "../middlewares/errorsIsEmpty.js";
-
 const router = express.Router();
 
 router.post(
@@ -33,7 +32,6 @@ router.delete(
   expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),
   userControllers.destroy
 );
-/* router.post("/api/users/login", userControllers.login); */
 router.post(
   "/api/users/profile",
   expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),
