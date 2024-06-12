@@ -4,7 +4,7 @@ const videogameValidations = [
   check("name").notEmpty(),
   check("price").isNumeric(),
   check("description").notEmpty(),
-  check("category").notEmpty(),
+  check("gamemode").notEmpty(),
   check("pegi").notEmpty(),
   check("theme").notEmpty(),
   check("gender").notEmpty(),

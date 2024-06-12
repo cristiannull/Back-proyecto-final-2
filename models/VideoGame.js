@@ -20,11 +20,11 @@ const videoGamesSchema = mongoose.Schema({
     },
   ],
 
-  category: [
+  gamemode: [
     {
       type: mongoose.Types.ObjectId,
       required: true,
-      ref: "Category",
+      ref: "GameMode",
     },
   ],
   pegi: [
