@@ -31,11 +31,15 @@ async function create(req, res) {
 
 async function findName(req, res) {
   try {
-    const gameId = req.params.name;
+    const gameName = req.params.name.toLowerCase();
     const game = await videoGame
-      .find({ name: gameId })
+      .find({ name: { $regex: gameName, $options: "i" } })
       .populate("gamemode pegi gender theme developer typeoffer");
-    res.status(200).json(game);
+    if (game.length > 0) {
+      res.status(200).json(game);
+    } else {
+      res.status(404).json("Videogame not found");
+    }
   } catch (err) {
     res.status(500).json("error del servidor");
   }
