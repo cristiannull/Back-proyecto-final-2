@@ -20,7 +20,8 @@ router.post(
   errorsIsEmpty,
   videogameControllers.create
 );
-router.get("/api/videogame/:id", videogameControllers.find);
+router.get("/api/videogame/:name", videogameControllers.findName);
+router.get("/api/videogamebyid/:id", videogameControllers.findId);
 router.get("/api/videogame", videogameControllers.list);
 router.patch("/api/videogame/:id", videogameControllers.update);
 router.delete("/api/videogame/:id", videogameControllers.destroy);

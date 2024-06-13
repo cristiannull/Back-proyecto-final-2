@@ -1,6 +1,6 @@
 import videoGame from "../models/VideoGame.js";
 import Typeoffer from "../models/TypeOffer.js";
-import Gender from "../models/Gender.js"
+import Gender from "../models/Gender.js";
 import Theme from "../models/theme.js";
 import GameMode from "../models/GameMode.js";
 import Pegi from "../models/pegi.js";
@@ -18,16 +18,30 @@ async function create(req, res) {
       developer: req.body.developer,
       description: req.body.description,
       video: req.body.video,
-      typeoffer:req.body.typeoffer
+      typeoffer: req.body.typeoffer,
     });
-    res.json(await newGame.populate("gamemode pegi gender theme developer typeoffer"));
+    res.json(
+      await newGame.populate("gamemode pegi gender theme developer typeoffer")
+    );
   } catch (err) {
     console.log(err);
     res.status(500).json("error del servidor");
   }
 }
 
-async function find(req, res) {
+async function findName(req, res) {
+  try {
+    const gameId = req.params.name;
+    const game = await videoGame
+      .find({ name: gameId })
+      .populate("gamemode pegi gender theme developer typeoffer");
+    res.status(200).json(game);
+  } catch (err) {
+    res.status(500).json("error del servidor");
+  }
+}
+
+async function findId(req, res) {
   try {
     const gameId = req.params.id;
     const game = await videoGame
@@ -60,27 +74,27 @@ async function list(req, res) {
     const where = {};
 
     if (req.query.typeoffer) {
-      const typeoffer= await Typeoffer.findOne({name: req.query.typeoffer})
+      const typeoffer = await Typeoffer.findOne({ name: req.query.typeoffer });
       where.typeoffer = typeoffer.id;
     }
 
     if (req.query.gender) {
-      const gender= await Gender.findOne({name: req.query.gender})
+      const gender = await Gender.findOne({ name: req.query.gender });
       where.gender = gender.id;
     }
 
     if (req.query.theme) {
-      const theme= await Theme.findOne({name: req.query.theme})
+      const theme = await Theme.findOne({ name: req.query.theme });
       where.theme = theme.id;
     }
 
     if (req.query.gamemode) {
-      const gamemode= await GameMode.findOne({name: req.query.gamemode})
+      const gamemode = await GameMode.findOne({ name: req.query.gamemode });
       where.gamemode = gamemode.id;
     }
 
     if (req.query.pegi) {
-      const pegi= await Pegi.findOne({name: req.query.pegi})
+      const pegi = await Pegi.findOne({ name: req.query.pegi });
       where.pegi = pegi.id;
     }
 
@@ -127,7 +141,7 @@ async function update(req, res) {
     gameEncontrado.description =
       req.body.description || gameEncontrado.description;
     gameEncontrado.video = req.body.video || gameEncontrado.video;
-    gameEncontrado.typeoffer= req.body.typeoffer || gameEncontrado.typeoffer
+    gameEncontrado.typeoffer = req.body.typeoffer || gameEncontrado.typeoffer;
 
     await gameEncontrado.save();
     res.json(gameEncontrado);
@@ -147,7 +161,8 @@ async function destroy(req, res) {
 
 export default {
   create,
-  find,
+  findId,
+  findName,
   list,
   update,
   destroy,
