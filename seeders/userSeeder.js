@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 async function seedUsers() {
   const users = [
     {
-      _id: "66467269ca83a4f05f49d028",
+      _id: "66467269ca83a4f05f49d003",
       firstname: "Pepe",
       lastname: "Milanesa",
       email: "milanesapepe@pep.com",
@@ -95,13 +95,16 @@ async function seedUsers() {
     },
   ];
 
-  for (let userData of users) {
-    userData.password = await bcrypt.hash(userData.password, 10);
-    await User.create(userData);
-  }
+  try {
+    for (let userData of users) {
+      userData.password = await bcrypt.hash(userData.password, 10);
+    }
 
-  console.log("Usuarios creados exitosamente");
-  process.exit();
+    await User.create(users);
+    console.log("Users creados exitocisimamente");
+  } catch (error) {
+    console.error("Error al crear usuarios:", error);
+  }
 }
 
-seedUsers();
+export default seedUsers;
