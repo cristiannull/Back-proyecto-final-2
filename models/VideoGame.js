@@ -56,6 +56,13 @@ const videoGamesSchema = mongoose.Schema({
     },
   ],
 
+  cover:[
+    {
+      type: String,
+      required: true,
+    },
+  ],
+
   developer: [
     {
       type: mongoose.Types.ObjectId,
@@ -75,7 +82,16 @@ const videoGamesSchema = mongoose.Schema({
       ref: "Typeoffer",
     },
   ],
+
+  systemRequirements:[
+    {
+      type: String,
+      required: true,
+    },
+  ]
 });
+
+
 
 const VideoGames = mongoose.model("VideoGames", videoGamesSchema);
 

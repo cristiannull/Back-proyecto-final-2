@@ -14,10 +14,12 @@ async function create(req, res) {
       gender: req.body.gender,
       theme: req.body.theme,
       image: req.file.filename,
+      cover: req.file.filename,
       price: req.body.price,
       developer: req.body.developer,
       description: req.body.description,
       video: req.body.video,
+      systemRequirements:req.body.systemRequirements,
       typeoffer: req.body.typeoffer,
     });
     res.json(
@@ -141,10 +143,13 @@ async function update(req, res) {
     gameEncontrado.gender = req.body.gender || gameEncontrado.gender;
     gameEncontrado.theme = req.body.theme || gameEncontrado.theme;
     gameEncontrado.image = req.body.image || gameEncontrado.image;
+    gameEncontrado.cover = req.body.cover || gameEncontrado.cover;
     gameEncontrado.price = req.body.price || gameEncontrado.price;
     gameEncontrado.description =
       req.body.description || gameEncontrado.description;
     gameEncontrado.video = req.body.video || gameEncontrado.video;
+    gameEncontrado.systemRequirements =
+    req.body.systemRequirements || gameEncontrado.systemRequirements;
     gameEncontrado.typeoffer = req.body.typeoffer || gameEncontrado.typeoffer;
 
     await gameEncontrado.save();
