@@ -1,6 +1,7 @@
-import User from "../models/User.js";
+import Userlogin from "../models/UserLogin.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import User from "../models/User.js";
 
 async function login(req, res) {
   try {
@@ -15,10 +16,10 @@ async function login(req, res) {
         const token = jwt.sign(tokenPayload, process.env.JWT_SECRET);
         res.json({ token: token });
       } else {
-        res.json("Tu email o contraseña son INCORRECTOS");
+        res.status(401).json("Tu email o contraseña son INCORRECTOS");
       }
     } else {
-      res.json("Tu email o contraseña son INCORRECTOS");
+      res.status(401).json("Tu email o contraseña son INCORRECTOS");
     }
   } catch (err) {
     res.status(500).json("Internal server error");
