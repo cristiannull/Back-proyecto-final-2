@@ -23,14 +23,14 @@ const videoGamesSchema = mongoose.Schema({
   gamemode: [
     {
       type: mongoose.Types.ObjectId,
-      required: true,
+       required: true, 
       ref: "GameMode",
     },
   ],
   pegi: [
     {
       type: mongoose.Types.ObjectId,
-      required: true,
+       required: true, 
       ref: "Pegi",
     },
   ],
@@ -44,7 +44,7 @@ const videoGamesSchema = mongoose.Schema({
   theme: [
     {
       type: mongoose.Types.ObjectId,
-      required: true,
+      required: true, 
       ref: "Theme",
     },
   ],
@@ -66,14 +66,14 @@ const videoGamesSchema = mongoose.Schema({
   developer: [
     {
       type: mongoose.Types.ObjectId,
-      required: true,
+       required: true, 
       ref: "Developer",
     },
   ],
 
-  video: {
+  videoId: {
     type: String,
-    required: true,
+required: true,
   },
 
   typeoffer: [
@@ -88,7 +88,14 @@ const videoGamesSchema = mongoose.Schema({
       type: String,
       required: true,
     },
-  ]
+  ],
+
+  videogamereview:[
+    {
+      type: String,
+    },
+  ],
+
 });
 
 

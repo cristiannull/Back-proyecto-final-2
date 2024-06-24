@@ -13,14 +13,15 @@ async function create(req, res) {
       pegi: req.body.pegi,
       gender: req.body.gender,
       theme: req.body.theme,
-      image: req.file.filename,
-      cover: req.file.filename,
+      image: req.body.image,
+      cover: req.body.cover,
       price: req.body.price,
       developer: req.body.developer,
       description: req.body.description,
-      video: req.body.video,
+      videoId: req.body.videoId,
       systemRequirements:req.body.systemRequirements,
       typeoffer: req.body.typeoffer,
+      videogamereview: req.body.videogamereview
     });
     res.json(
       await newGame.populate("gamemode pegi gender theme developer typeoffer")
@@ -61,7 +62,7 @@ async function findId(req, res) {
 
 async function list(req, res) {
   try {
-    const { page = 1, limit = 52 } = req.query;
+    const { page = 1, limit = 80 } = req.query;
 
     const options = {
       page: parseInt(page, 10),
@@ -147,11 +148,12 @@ async function update(req, res) {
     gameEncontrado.price = req.body.price || gameEncontrado.price;
     gameEncontrado.description =
       req.body.description || gameEncontrado.description;
-    gameEncontrado.video = req.body.video || gameEncontrado.video;
+    gameEncontrado.videoId = req.body.videoId || gameEncontrado.videoId;
     gameEncontrado.systemRequirements =
     req.body.systemRequirements || gameEncontrado.systemRequirements;
     gameEncontrado.typeoffer = req.body.typeoffer || gameEncontrado.typeoffer;
-
+    gameEncontrado.videogamereview = req.body.videogamereview || gameEncontrado.videogamereview;
+    
     await gameEncontrado.save();
     res.json(gameEncontrado);
   } catch (err) {
