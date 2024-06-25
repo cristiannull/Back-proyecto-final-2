@@ -15,9 +15,8 @@ if (!fs.existsSync(uploadDir)) {
 
 router.post(
   "/api/videogame",
-  upload.single("image"),
-  videogameValidations,
-  errorsIsEmpty,
+ /*  videogameValidations,
+  errorsIsEmpty, */
   videogameControllers.create
 );
 router.get("/api/videogame/:name", videogameControllers.findName);

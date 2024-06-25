@@ -16,7 +16,7 @@ async function seedVideogames (){
     "https://cdn2.unrealengine.com/egs-social-rocketleague-news-1920x1080-1920x1080-975383433.jpg",
   ],
   cover:"https://th.bing.com/th/id/R.4266ff99c3051ddd2df9558a3eaa5184?rik=7XwdIM6%2fQitCZg&riu=http%3a%2f%2fcdn02.nintendo-europe.com%2fmedia%2fimages%2f11_square_images%2fgames_18%2fnintendo_switch_download_software%2fSQ_NSwitchDS_RocketLeague.jpg&ehk=mgsN3LUeEhTgZsz6lzzHW3tJHJ9LzkvTgfaYaJDEipQ%3d&risl=&pid=ImgRaw&r=0",
-  video: "SgSX3gOrj60",
+  videoId: "SgSX3gOrj60",
   price: 0,
   description:[
     "Rocket League combina fútbol con conducción de alta velocidad, ofreciendo una experiencia de juego única y emocionante. Los jugadores controlan vehículos con cohetes que pueden chocar y volar por los aires para marcar goles espectaculares en arenas futuristas.",
@@ -49,7 +49,7 @@ async function seedVideogames (){
     "https://www.gamingtalker.it/wp-content/uploads/2021/09/God-of-War-Ragnarok_PS5_img03.jpg",
   ],
   cover:"https://i.redd.it/r90tvpqmjpb91.jpg",
-  video: "Ut7FkcpYL74",
+  videoId: "Ut7FkcpYL74",
   price: 59,
   description:[
    "God of War Ragnarök continúa la saga de Kratos y su hijo Atreus en una nueva y épica aventura. El juego ofrece una jugabilidad intensa y una narrativa envolvente mientras los protagonistas se enfrentan a los dioses nórdicos y a las profecías del fin del mundo.",
@@ -82,7 +82,7 @@ async function seedVideogames (){
     "https://fadedspring.co.uk/wp-content/uploads/2021/07/Roblox-Summer-Games-Fun-.jpg",
   ],
   cover:"https://quoramarketing.com/wp-content/uploads/2023/05/How-to-Force-Restart-Roblox.png",
-  video: "sme76WoJ_-U",
+  videoId: "sme76WoJ_-U",
   price: 0,
   description:[
     "Roblox es una plataforma de juegos en línea y un sistema de creación de juegos que permite a los usuarios diseñar sus propios juegos y jugar a una amplia variedad de juegos creados por otros usuarios. Con una comunidad activa y diversa, Roblox ofrece una experiencia de juego única y personalizable.",
@@ -114,7 +114,7 @@ async function seedVideogames (){
     "https://www.lifewire.com/thmb/TqLkviC4FT2b4knH_tS3-wtUzcY=/1920x1080/filters:no_upscale():max_bytes(150000):strip_icc()/kidsfunonlinegames-minecraft-5c02672646e0fb0001deb5c6.jpg",
   ],
   cover:"https://www.mobygames.com/images/covers/l/591553-minecraft-playstation-vita-edition-ps-vita-front-cover.png",
-  video: "MmB9b5njVbA",
+  videoId: "MmB9b5njVbA",
   price: 20,
   description:[
     "Minecraft es un juego de construcción y aventuras en un mundo abierto compuesto por bloques. Los jugadores pueden explorar, recolectar recursos, construir estructuras y enfrentar a criaturas en un entorno dinámico y completamente personalizable.",
@@ -149,7 +149,7 @@ async function seedVideogames (){
     "https://assets.vg247.com/current/2013/11/terrariamobmp_screen186.jpg",
   ],
   cover:"https://forums.terraria.org/index.php?attachments/terrariajealbumcover-png.279585/",
-  video: "w7uOhFTrrq0",
+  videoId: "w7uOhFTrrq0",
   price: 10,
   description:[
     "Terraria es un juego de aventura y construcción en 2D, donde los jugadores pueden explorar, excavar, construir y luchar en un mundo generado de manera procedimental. Con una mezcla de jugabilidad de sandbox y elementos de RPG, Terraria ofrece una experiencia rica y variada.",
@@ -183,7 +183,7 @@ async function seedVideogames (){
     "https://2.bp.blogspot.com/-R_W_dCz8gLw/U-bx1MKouXI/AAAAAAAAAys/ozkEOoCeWxY/s1600/portal-2-videogame-review-5_11.jpg",
   ],
   cover:"https://www.premadepixels.com/wp-content/uploads/2022/06/Portal-2-Album-Cover-PP1.jpg",
-  video: "tax4e4hBBZc",
+  videoId: "tax4e4hBBZc",
   price: 12,
   description: [
     " Portal 2 continúa con esa fórmula ganadora consistente en una innovadora mecánica de juego, historia y música que condujeron al Portal original a ganar más de 70 galardones y lo convirtieron en un nuevo mito de la industria.",
@@ -215,7 +215,7 @@ async function seedVideogames (){
     "https://i.ytimg.com/vi/ZfZGe_C4vN0/maxresdefault.jpg",
   ],
   cover:"https://th.bing.com/th/id/OIP.kBxaxEZ6nGcj2syPh_kq4QHaKd?rs=1&pid=ImgDetMain",
-  video: "W01L70IGBgE",
+  videoId: "W01L70IGBgE",
   price: 50,
   description:[
     "The Last of Us es un juego de acción y aventura en tercera persona desarrollado por Naughty Dog. Ambientado en un mundo post-apocalíptico, los jugadores siguen la historia de Joel y Ellie mientras intentan sobrevivir en un entorno devastado por una pandemia fúngica.",
@@ -250,7 +250,7 @@ async function seedVideogames (){
     "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/03/last-of-us-2-5.jpg",
   ],
   cover:"https://th.bing.com/th/id/OIP.mxQFqz82VcNLMPQcshuLYwHaJx?rs=1&pid=ImgDetMain",
-  video: "vhII1qlcZ4E",
+  videoId: "vhII1qlcZ4E",
   price: 65,
   description:[
     "The Last of Us Part II continúa la historia de Ellie y Joel en un mundo post-apocalíptico devastado por una pandemia. Desarrollado por Naughty Dog, el juego ofrece una narrativa emocionante y gráficos impresionantes que llevan a los jugadores a un viaje de venganza y redención.",
@@ -284,7 +284,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/OIP.EV7RaSj2vNr9i4SfYuVeqAHaEK?rs=1&pid=ImgDetMain",
   ],
   cover:"https://cdn.mobygames.com/covers/10676751-cyberpunk-2077-playstation-4-front-cover.jpg",
-  video: "8X2kIfS6fb8",
+  videoId: "8X2kIfS6fb8",
   price: 45,
   description:[
     "Cyberpunk 2077 es un juego de rol de mundo abierto desarrollado por CD Projekt Red, ambientado en Night City, una metrópolis futurista obsesionada por el poder, la moda y la tecnología. Los jugadores asumen el papel de V, un mercenario en busca de un implante único que promete la clave de la inmortalidad.",
@@ -319,7 +319,7 @@ async function seedVideogames (){
     "https://www.windowscentral.com/sites/wpcentral.com/files/styles/large/public/field/image/2019/03/halo-reach-multiplayer-1.jpg",
   ],
   cover:"https://mir-s3-cdn-cf.behance.net/project_modules/fs/f16db193304569.5e61168a64764.jpg",
-  video: "s3MabEog3yQ",
+  videoId: "s3MabEog3yQ",
   price: 12,
   description:[
     "Halo Reach es un videojuego de disparos en primera persona desarrollado por Bungie Studios y publicado por Microsoft Game Studios. Se ambienta en el universo de ciencia ficción de la serie Halo y sirve como precuela de los eventos del primer juego de la saga. Los jugadores asumen el papel de Noble Six, un soldado Spartan enviado a defender el planeta Reach de la invasión alienígena.",
@@ -353,7 +353,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.4ef14de6700c99c370dca3a8660210c0?rik=AaF9eNAqe1%2bL1Q&pid=ImgRaw&r=0",
   ],
   cover:"https://cdn.gearsofwar.com/gearsofwar/sites/9/2020/02/gears-of-war-2-5e4712bb05532-1024x1024.jpg",
-  video: "rNCF6sDymRc",
+  videoId: "rNCF6sDymRc",
   price: 10,
   description:[
     "Gears of War 2 es un videojuego de disparos en tercera persona desarrollado por Epic Games y publicado por Microsoft Game Studios. Es la secuela del aclamado Gears of War y sigue la historia del escuadrón Delta mientras luchan contra la horda Locust para salvar al planeta Sera. Los jugadores asumen el papel de Marcus Fenix, un soldado de la COG, en su misión para encontrar una cura para la plaga que amenaza con destruir a la humanidad.",
@@ -387,7 +387,7 @@ async function seedVideogames (){
     "https://mattbrett.com/wp-content/uploads/2013/02/blackops2-hero.jpg",
   ],
   cover:"https://i.redd.it/s8bxj8h89by31.jpg",
-  video: "x3tedlWs1XY",
+  videoId: "x3tedlWs1XY",
   price: 15,
   description:[
     "Call of Duty: Black Ops II es un juego de disparos en primera persona desarrollado por Treyarch y publicado por Activision. Es la secuela del exitoso Call of Duty: Black Ops y se ambienta en un futuro cercano durante la Guerra Fría del siglo XXI. La historia se desarrolla en dos líneas de tiempo diferentes, siguiendo las acciones de Alex Mason en la década de 1980 y su hijo David en 2025, mientras enfrentan una nueva amenaza global.",
@@ -421,7 +421,7 @@ async function seedVideogames (){
     "https://www.dsogaming.com/wp-content/uploads/2022/01/Elden-Ring-new-screenshots-1.jpg",
   ],
   cover:"https://image.api.playstation.com/vulcan/ap/rnd/202107/0902/8ew9QqHI1eLFFq5XdIOhN2Q2.jpg",
-  video: "E3Huy2cdih0",
+  videoId: "E3Huy2cdih0",
   price: 50,
   description:[
     "Elden Ring es un próximo videojuego de acción y rol desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. Dirigido por Hidetaka Miyazaki, el creador de la serie Souls, y con la colaboración del autor de fantasía George R. R. Martin, Elden Ring promete llevar a los jugadores a un vasto mundo de fantasía oscuro y misterioso.",
@@ -456,7 +456,7 @@ async function seedVideogames (){
     "https://img.redbull.com/images/c_fill,g_auto,w_1500,h_1000/q_auto,f_auto/redbullcom/2017/04/07/1331852866239_2/gta-6-ecco-dove-vorremmo-fosse-ambientato-1",
   ],
   cover:"https://th.bing.com/th/id/R.641d6e5eef3fedb4c0af6986a0bec50e?rik=7g%2bnaGNfnw3yUQ&pid=ImgRaw&r=0",
-  video: "QkkoHAzjnUs",
+  videoId: "QkkoHAzjnUs",
   price: 20,
   description:[
    "Grand Theft Auto V es un videojuego de acción y aventura desarrollado por Rockstar North y publicado por Rockstar Games. Situado en la ficticia ciudad de Los Santos y sus alrededores, GTA V ofrece a los jugadores un vasto mundo abierto donde pueden explorar, interactuar y participar en una variedad de actividades criminales.",
@@ -491,7 +491,7 @@ async function seedVideogames (){
     "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2020/07/RDR2-PS2-Games-RE4.jpg",
   ],
   cover:"https://th.bing.com/th/id/R.f033e808cde5d4dc091d5adcd4b7293f?rik=3jodoHZokFypVA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-hfBYlebhta4%2fWPDdTtekQUI%2fAAAAAAAAA4E%2f1ApWBLXTjMIyGuKQUZW3TcmJAEm6tKiVwCK4B%2fs1600%2fRE4PCCover.jpg&ehk=O%2fc546%2fgr0by0C898JVH%2bNTyqLKewvNO5qcFQW4I0qg%3d&risl=&pid=ImgRaw&r=0",
-  video: "JpSOccC5sV0",
+  videoId: "JpSOccC5sV0",
   price: 35,
   description:[
     "Resident Evil 4 es un juego de acción y supervivencia desarrollado por Capcom. Es la sexta entrega principal de la serie Resident Evil y sigue al agente especial Leon S. Kennedy mientras investiga la desaparición de la hija del presidente en una aldea rural de Europa. Pronto descubre que la aldea está infectada por un extraño parásito que convierte a sus habitantes en criaturas violentas y peligrosas.",
@@ -525,7 +525,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.ff9dbae2b54ae58fb2d16654ef92d20b?rik=U35OItdkDrlG6Q&riu=http%3a%2f%2fimages.nintendolife.com%2fscreenshots%2f81284%2flarge.jpg&ehk=gvflXaFFV8Alz9esdw98X%2fJfvDcKob%2fj185fitS0rE0%3d&risl=&pid=ImgRaw&r=0",
   ],
   cover:"https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_1920,q_75/MNS/NOE/70010000000023/SQ_NSwitch_TheLegendOfZeldaBreathOfTheWild_E",
-  video: "zw47_q9wbBE",
+  videoId: "zw47_q9wbBE",
   price: 60,
   description:[
     "The Legend of Zelda: Breath of the Wild rompe con las convenciones de los juegos anteriores de la serie The Legend of Zelda y te transporta a un mundo de descubrimiento, exploración y aventura. Viaja a través de vastos campos, bosques y picos de montañas mientras descubres qué ha sido del reino de Hyrule en esta impresionante aventura al aire libre.",
@@ -560,7 +560,7 @@ async function seedVideogames (){
     "https://image.api.playstation.com/vulcan/ap/rnd/202107/1210/mmWERw3tksap8GbYMpt2X2IT.jpg",
   ],
   cover:"https://www.mobygames.com/images/covers/l/661055-minecraft-dungeons-nintendo-switch-front-cover.jpg",
-  video: "KCbE47v1qVk",
+  videoId: "KCbE47v1qVk",
   price: 18,
   description:[
     "Minecraft Dungeons es un juego de acción y aventuras desarrollado por Mojang Studios y publicado por Xbox Game Studios. Ambientado en el universo de Minecraft, Dungeons ofrece una nueva perspectiva del mundo familiar de bloques, centrándose en la exploración de mazmorras y la lucha contra monstruos.",
@@ -594,7 +594,7 @@ async function seedVideogames (){
     "https://gamerant.com/wp-content/uploads/Fortnite-gameplay-screenshot-7.jpg",
   ],
   cover:"https://th.bing.com/th/id/R.674280ccb397eb6648e4c2817e2be5e7?rik=ie21oLCTOBarnw&pid=ImgRaw&r=0",
-  video: "WJW-bzXZM8M",
+  videoId: "WJW-bzXZM8M",
   price: 0,
   description:[
     "Fortnite es un juego de batalla real desarrollado por Epic Games que ha capturado la atención de millones de jugadores en todo el mundo. Ambientado en un colorido mundo de estilo caricaturesco, Fortnite ofrece una experiencia única que combina elementos de construcción, supervivencia y combate en línea.",
@@ -628,7 +628,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/OIP.N9fK1UcplY1uC8bFVA0e3AHaEK?rs=1&pid=ImgDetMain",
   ],
   cover:"https://images.igdb.com/igdb/image/upload/t_1080p/co1mxf.jpg",
-  video: "5kcdRBHM7kM",
+  videoId: "5kcdRBHM7kM",
   price: 60,
   description:[
  "Super Mario Odyssey es un juego de plataformas desarrollado y publicado por Nintendo para la consola Nintendo Switch. En esta emocionante aventura, los jugadores acompañan a Mario en un viaje por todo el mundo mientras intenta rescatar a la Princesa Peach de las garras de Bowser, quien planea casarse con ella.",
@@ -662,7 +662,7 @@ async function seedVideogames (){
     "https://www.pwrdown.com/wp-content/uploads/2018/10/Screenshot-2018-10-01-at-8.00.04-PM-1920x1066.jpg",
   ],
   cover:"https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png",
-  video: "gmA6MrX81z4",
+  videoId: "gmA6MrX81z4",
   price: 60,
   description:[
     "Red Dead Redemption 2 es un videojuego de acción-aventura desarrollado y publicado por Rockstar Games. Ambientado en el salvaje oeste americano en 1899, el juego sigue la historia de Arthur Morgan, un forajido y miembro de la banda Van der Linde, mientras lucha por sobrevivir en un mundo cambiante y en decadencia.",
@@ -696,7 +696,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.5d391ba29add6f16f649b307ae06bf32?rik=T4DnWzqm%2fpdOJg&pid=ImgRaw&r=0",
   ],
   cover:"https://th.bing.com/th/id/R.84c3624e244ec843f28bf4c2dc4a5aa9?rik=qTgnteFq0C27hw&riu=http%3a%2f%2fwww.mobygames.com%2fimages%2fcovers%2fl%2f392214-the-witcher-3-wild-hunt-xbox-one-front-cover.png&ehk=FhkZ8Sj0i8xgY8nnLgtlb5yaCrPmyNfe%2b9QN3TgDwfY%3d&risl=&pid=ImgRaw&r=0",
-  video: "c0i88t0Kacs",
+  videoId: "c0i88t0Kacs",
   price: 40,
   description:[
     "The Witcher 3: Wild Hunt es un videojuego de rol de acción desarrollado por CD Projekt Red. Ambientado en un mundo de fantasía oscuro y lleno de peligros, el juego sigue la historia de Geralt de Rivia, un cazador de monstruos conocido como un Witcher, mientras busca a su hija adoptiva perdida en un mundo asolado por la guerra.",
@@ -730,7 +730,7 @@ async function seedVideogames (){
     "https://i2-prod.dailystar.co.uk/incoming/article20796138.ece/ALTERNATES/s1227b/0_Overwatch-2_Blizzcon_2019_Screenshot_Rio_Group_3P_Gameplay_02_png_jpgcopy.jpg",
   ],
   cover:"https://th.bing.com/th/id/OIP.DDKYts7qK22GqfvH1J52YwAAAA?rs=1&pid=ImgDetMain",
-  video: "BowIDnsNvjs",
+  videoId: "BowIDnsNvjs",
   price: 40,
   description:[
     "Overwatch 2 es un próximo juego de disparos en equipo desarrollado por Blizzard Entertainment, continuando la exitosa franquicia Overwatch. Ambientado en un futuro heroico y colorido, Overwatch 2 lleva a los jugadores a un mundo lleno de héroes dispuestos a defender la paz en medio del caos.",
@@ -764,7 +764,7 @@ async function seedVideogames (){
     "https://www.videogameschronicle.com/files/2020/04/Modern-Warfare-multiplayer-f.jpg",
   ],
   cover:"https://esports.as.com/2020/08/21/call-of-duty/Todas-portadas-Call-of-Duty_1384671549_481767_1024x1289.jpg",
-  video: "bH1lHCirCGI",
+  videoId: "bH1lHCirCGI",
   price: 60,
   description:[
   "Call of Duty: Modern Warfare es un videojuego de disparos en primera persona desarrollado por Infinity Ward y publicado por Activision. Se trata de un reinicio suave de la serie Modern Warfare, presentando una campaña intensa y realista, un multijugador competitivo y un modo cooperativo de Operaciones Especiales.",
@@ -798,7 +798,7 @@ async function seedVideogames (){
     "https://wccftech.com/wp-content/uploads/2021/12/Grand-Theft-Auto-San-Andreas-%E2%80%93-The-Definitive-Edition-scaled.jpg",
   ],
   cover:"https://i11b.3djuegos.com/juegos/1012/grand_theft_auto_san_andreas/fotos/ficha/grand_theft_auto_san_andreas-3785649.jpg",
-  video: "H4rYVsJ4v9Y",
+  videoId: "H4rYVsJ4v9Y",
   price: 30,
   description:[
     "Grand Theft Auto: San Andreas es un videojuego de acción y aventura desarrollado por Rockstar North y publicado por Rockstar Games. Situado en el estado ficticio de San Andreas, el juego sigue la historia de Carl (CJ) Johnson mientras lucha por tomar el control de las calles y desentrañar los misterios detrás del asesinato de su madre.",
@@ -832,7 +832,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/OIP.DQpsQwJItvJZSgIpQSgU0gHaE8?rs=1&pid=ImgDetMain",
   ],
   cover:"https://th.bing.com/th/id/OIP.g5ADkUXpfhz-k1lLfzYjqwAAAA?rs=1&pid=ImgDetMain",
-  video: "u9TY741PSh8",
+  videoId: "u9TY741PSh8",
   price: 60,
   description:[
     "Animal Crossing: New Horizons es un juego de simulación de vida desarrollado y publicado por Nintendo para la consola Nintendo Switch. En este encantador juego, los jugadores se embarcan en una nueva vida en una isla desierta, donde pueden construir, decorar y personalizar su propio paraíso tropical.",
@@ -866,7 +866,7 @@ async function seedVideogames (){
     "https://www.dsogaming.com/wp-content/uploads/2020/01/Doom-Eternal-new-3.jpg",
   ],
   cover:"https://th.bing.com/th/id/R.f4278cd65095df6435cb4e86d1fa86cd?rik=z%2fJW1Nc10dfTwA&pid=ImgRaw&r=0",
-  video: "F0tekG2XP_A",
+  videoId: "F0tekG2XP_A",
   price: 60,
   description:[
     "Doom Eternal es un juego de disparos en primera persona desarrollado por id Software y publicado por Bethesda Softworks. Es la secuela directa de Doom (2016) y continúa la historia del Doom Slayer mientras lucha contra las fuerzas del infierno que han invadido la Tierra.",
@@ -900,7 +900,7 @@ async function seedVideogames (){
     "https://wallpapercave.com/wp/wp4893166.jpg",
   ],
   cover:"https://th.bing.com/th/id/OIP.5Zy-pog_QbRjALPiBADZugHaLH?rs=1&pid=ImgDetMain",
-  video: "iP7fIzDH6nY",
+  videoId: "iP7fIzDH6nY",
   price: 20,
   description:[
     "Grand Theft Auto: Vice City es un videojuego de acción y aventura desarrollado por Rockstar North y publicado por Rockstar Games. Ambientado en la década de 1980 en la ficticia ciudad de Vice City, el juego sigue la historia de Tommy Vercetti, un mafioso recién liberado de la prisión que busca establecerse en el mundo del crimen.",
@@ -934,7 +934,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.80e54d3d5b1aac307e4acd288df072a3?rik=4oONhUmwfZ6P5Q&pid=ImgRaw&r=0",
   ],
   cover:"https://th.bing.com/th/id/R.580b7703c72ae29faeaa2b3f20bcb00a?rik=PdKnH1uasznnFQ&pid=ImgRaw&r=0",
-  video: "rFh2i4AlPD4",
+  videoId: "rFh2i4AlPD4",
   price: 60,
   description:[
     "Halo Infinite es un próximo juego de disparos en primera persona desarrollado por 343 Industries y publicado por Xbox Game Studios. Es la sexta entrega principal de la serie Halo y continúa la historia del Jefe Maestro mientras lucha contra una nueva amenaza en el universo Halo.",
@@ -968,7 +968,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.a3edeca9e100b12c07243b324ecdf65a?rik=t7A2GmzqPs4C0Q&pid=ImgRaw&r=0",
   ],
   cover:"https://images-na.ssl-images-amazon.com/images/I/91lmTAVXgHL.jpg",
-  video: "rKjUAWlbTJk",
+  videoId: "rKjUAWlbTJk",
   price: 60,
   description:[
    "Assassin's Creed Valhalla es un videojuego de acción y aventura desarrollado por Ubisoft Montreal y publicado por Ubisoft. Ambientado en el siglo IX durante la era vikinga, el juego sigue la historia de Eivor, un guerrero vikingo que lidera su clan en busca de un nuevo hogar en Inglaterra.",
@@ -1002,7 +1002,7 @@ async function seedVideogames (){
     "https://cdn.mos.cms.futurecdn.net/zVBKKaVz8rdCGRM7b46voA.jpg",
   ],
   cover:"https://www.residentevil.com/village/ge/assets/images/common/share-gl.png",
-  video: "dRpXEc-EJow",
+  videoId: "dRpXEc-EJow",
   price: 60,
   description:[
     "Resident Evil Village es un videojuego de terror y supervivencia desarrollado y publicado por Capcom. Es la secuela directa de Resident Evil 7: Biohazard y sigue la historia de Ethan Winters mientras se enfrenta a horrores inimaginables en un misterioso pueblo europeo.",
@@ -1036,7 +1036,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.f093cef64e15b30307f075efcce5c868?rik=SXkbCNjtFutNug&pid=ImgRaw&r=0",
   ],
   cover:"https://assets-prd.ignimgs.com/2020/09/17/hades-button-fin-1600382124693.png",
-  video: "91t0ha9x0AE",
+  videoId: "91t0ha9x0AE",
   price: 25,
   description:[
     "Hades es un roguelike de acción desarrollado y publicado por Supergiant Games. Ambientado en la mitología griega, el juego sigue la historia de Zagreus, el hijo del dios del inframundo, mientras intenta escapar del reino de Hades y alcanzar la superficie para reunirse con su madre, Perséfone.",
@@ -1070,7 +1070,7 @@ async function seedVideogames (){
     "https://images.pushsquare.com/screenshots/119570/large.jpg",
   ],
   cover:"https://errekgamer.com/wp-content/uploads/2021/12/Among-Us-portada.jpg",
-  video: "9pyYq9lpjls",
+  videoId: "9pyYq9lpjls",
   price: 5,
   description:[
   "Among Us es un juego en línea de supervivencia y misterio desarrollado por InnerSloth. Ambientado en una nave espacial, los jugadores asumen roles de tripulantes o impostores. Los tripulantes deben completar tareas y descubrir al impostor, mientras que el impostor debe sabotear la nave y eliminar a los tripulantes sin ser descubierto.",
@@ -1104,7 +1104,7 @@ async function seedVideogames (){
     "https://sm.ign.com/ign_br/gallery/g/ghost-of-t/ghost-of-tsushima-gameplay-screenshots-state-of-play_19gh.jpg",
   ],
   cover:"https://noespaisparafrikis.com/wp-content/uploads/2020/07/analisis-ghost-of-tsushima-portada.jpg",
-  video: "Zbq7BnsQhrw",
+  videoId: "Zbq7BnsQhrw",
   price: 60,
   description:[
     "Ghost of Tsushima es un juego de acción y aventura desarrollado por Sucker Punch Productions y publicado por Sony Interactive Entertainment. Ambientado en el Japón feudal durante la invasión mongol del siglo XIII, el juego sigue la historia de Jin Sakai, un samurái que se convierte en el legendario 'fantasma' para luchar contra los invasores.",
@@ -1138,7 +1138,7 @@ async function seedVideogames (){
     "https://wallpaperaccess.com/full/788582.jpg",
   ],
   cover:"https://assets-prd.ignimgs.com/2022/01/07/god-of-war-1-button-1641590922128.jpg",
-  video: "-bQyqPr71KY",
+  videoId: "-bQyqPr71KY",
   price: 60,
   description:[
     "God of War es un videojuego de acción y aventura desarrollado por Santa Monica Studio y publicado por Sony Computer Entertainment. En este juego, los jugadores asumen el papel de Kratos, un guerrero espartano que busca venganza contra los dioses griegos después de que estos le traicionaran.",
@@ -1172,7 +1172,7 @@ async function seedVideogames (){
     "https://m.media-amazon.com/images/S/aplus-media/sota/e0654109-2c99-43c1-a42b-e431b2ccef43.jpg",
   ],
   cover:"https://th.bing.com/th/id/R.386faff5491962e1ee1d4ce3d281f913?rik=ltHbxq3AxUq5NQ&pid=ImgRaw&r=0",
-  video: "qN4w5D2tzME",
+  videoId: "qN4w5D2tzME",
   price: 60,
   description:[
     "Splatoon 2 es un videojuego de disparos en tercera persona desarrollado y publicado por Nintendo para la consola Nintendo Switch. Es la secuela del exitoso Splatoon y se centra en emocionantes batallas multijugador entre equipos de jugadores, conocidos como Inklings, que pueden transformarse entre formas humanoides y de calamar.",
@@ -1206,7 +1206,7 @@ async function seedVideogames (){
     "https://nintendoeverything.com/wp-content/uploads/sites/1/nggallery/persona-5-scramble-nov-12/p5s-10.jpg",
   ],
   cover:"https://i5.walmartimages.com/asr/0ee378c4-0334-467c-83d5-f3dff13cadb8.506cbe2da96e3db0f4a90d36369b689b.jpeg",
-  video: "QnDzJ9KzuV4",
+  videoId: "QnDzJ9KzuV4",
   price: 60,
   description:[
     "Persona 5 es un videojuego de rol desarrollado por Atlus y publicado por Sega. Es el sexto título principal de la serie Persona y sigue la historia de un grupo de estudiantes de secundaria en Tokio que se convierten en ladrones fantasma para combatir la corrupción en la sociedad.",
@@ -1240,7 +1240,7 @@ async function seedVideogames (){
     "https://cdn.wccftech.com/wp-content/uploads/2019/08/Final-Fantasy-VII-Remake-Sector-8.jpg",
   ],
   cover:"https://gamefaqs.gamespot.com/a/box/8/5/3/746853_front.jpg",
-  video: "sz9QWTcbXYE",
+  videoId: "sz9QWTcbXYE",
   price: 60,
   description:[
     "Final Fantasy VII Remake es un juego de rol de acción desarrollado y publicado por Square Enix. Es una reimaginación del clásico juego de rol de 1997, Final Fantasy VII, que sigue la historia del ex-soldado Cloud Strife y su lucha contra la malévola corporación Shinra y el temible Sephiroth.",
@@ -1274,7 +1274,7 @@ async function seedVideogames (){
     "https://gamingbolt.com/wp-content/uploads/2019/03/Sekiro-Shadows-Die-Twice_03.jpg",
   ],
   cover:"https://th.bing.com/th/id/OIP.8hTIlUM1aggT1EneCN4S8wHaJS?rs=1&pid=ImgDetMain",
-  video: "rXMX4YJ7Lks",
+  videoId: "rXMX4YJ7Lks",
   price: 60,
   description:[
     "Sekiro: Shadows Die Twice es un juego de acción y aventura desarrollado por FromSoftware y publicado por Activision. Ambientado en el Japón feudal del siglo XVI, el juego sigue la historia de un guerrero shinobi conocido como Sekiro, que busca vengar la pérdida de su señor y rescatar a su joven señor secuestrado.",
@@ -1309,7 +1309,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.2f883d5279c640e5408b70ed0ff20233?rik=vRvOeoUxB3CzRw&pid=ImgRaw&r=0",
   ],
   cover:"https://external-preview.redd.it/eQDrGAx61Azyz9TARuuDVNrQavH3TSru-EvPZjTbTmU.jpg?auto=webp&s=78c39bb611859451f6332a5fab109d6fd330ec82",
-  video: "tKlRN2YpxRE",
+  videoId: "tKlRN2YpxRE",
   price: 60,
   description:[
     "Mario Kart 8 Deluxe es un juego de carreras desarrollado y publicado por Nintendo para la consola Nintendo Switch. Es una versión mejorada y expandida de Mario Kart 8, que incluye todos los DLCs lanzados para el juego original, junto con nuevas características y contenido adicional.",
@@ -1343,7 +1343,7 @@ async function seedVideogames (){
     "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/02/horizon-zero-dawn-aloy.jpg",
   ],
   cover:"https://th.bing.com/th/id/OIP.1rIAUaR_Wwif2zOaWYhmQwHaJn?rs=1&pid=ImgDetMain",
-  video: "_BvZvkT5QHw",
+  videoId: "_BvZvkT5QHw",
   price: 50,
   description:[
     "Horizon Zero Dawn es un juego de acción y aventura desarrollado por Guerrilla Games y publicado por Sony Interactive Entertainment. Ambientado en un mundo post-apocalíptico dominado por máquinas, el juego sigue la historia de Aloy, una joven cazadora en busca de su pasado y del misterio que rodea la desolada Tierra.",
@@ -1377,7 +1377,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/OIP.esxlcV6_JUR7vT6sNOfCegHaEK?rs=1&pid=ImgDetMain",
   ],
   cover:"https://th.bing.com/th/id/R.ef5fbd69ae110ee61fc75916cc02d086?rik=fGyCNlg6gKv0Lw&riu=http%3a%2f%2fwww.gamefront.de%2farchiv01-2016-gamefront%2fbloodborne-artbook-01.jpg&ehk=ZJUIl6yOiV1b95WhNvMFJvpwYYWyg%2fikg7Iq10alGhA%3d&risl=&pid=ImgRaw&r=0",
-  video: "G203e1HhixY",
+  videoId: "G203e1HhixY",
   price: 20,
   description:[
     "Bloodborne es un juego de acción y rol desarrollado por FromSoftware y publicado por Sony Computer Entertainment. Ambientado en la ciudad gótica de Yharnam, el juego sigue la historia de un cazador en busca de una cura para una misteriosa enfermedad que ha devastado la ciudad y la mente de sus habitantes.",
@@ -1412,7 +1412,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.b75fbad4c248e4102544878129810059?rik=hFSJ5XUYfaIRJA&riu=http%3a%2f%2fwww.gamepur.com%2ffiles%2fimages%2f2011%2felder-scrolls-v-skyrim-screen.jpg&ehk=mOCiyf3qcyJba%2fcAhOmyBvKdl22%2bOdyeilXW%2flm8tJI%3d&risl=&pid=ImgRaw&r=0",
   ],
   cover:"https://assets-prd.ignimgs.com/2021/08/19/elder-scrolls-skyrim-button-2017-1629409446732.jpg",
-  video: "JSRtYpNRoN0",
+  videoId: "JSRtYpNRoN0",
   price: 40,
   description:[
     "The Elder Scrolls V: Skyrim es un juego de rol de mundo abierto desarrollado por Bethesda Game Studios y publicado por Bethesda Softworks. Ambientado en la provincia de Skyrim, el juego sigue la historia del Sangre de Dragón, un personaje que se embarca en un épico viaje para derrotar al dragón Alduin, el devorador del mundo.",
@@ -1446,7 +1446,7 @@ async function seedVideogames (){
     "https://i.ytimg.com/vi/jsSQzMyw6yI/maxresdefault.jpg",
   ],
   cover:"https://cdr.cz/sites/default/files/dark_souls_iii_-_image_01.jpg",
-  video: "cWBwFhUv1-8",
+  videoId: "cWBwFhUv1-8",
   price: 60,
   description:[
     "Dark Souls III es un juego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. Ambientado en un oscuro y desolado mundo de fantasía, el juego sigue la historia de un no-muerto en su búsqueda para enlazar el fuego y salvar al reino de la maldición de la no-muerte.",
@@ -1480,7 +1480,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/OIP.WXdpNSblE46qS7mEnhyjnAHaEK?rs=1&pid=ImgDetMain",
   ],
   cover:"https://www.laps4.com/wp-content/uploads/2019/02/Celeste-portada.jpg",
-  video: "iofYDsA2yqg",
+  videoId: "iofYDsA2yqg",
   price: 20,
   description:[
     "Celeste es un juego de plataformas desarrollado por Matt Makes Games. En este título, los jugadores asumen el papel de Madeline, una joven que se aventura en la montaña Celeste, enfrentándose a desafíos difíciles y a sus propios miedos internos en un intento por alcanzar la cima.",
@@ -1514,7 +1514,7 @@ async function seedVideogames (){
     "https://gamingbolt.com/wp-content/uploads/2019/07/control-image-5.jpeg",
   ],
   cover:"https://gamepreorders.com/wp-content/uploads/2019/03/cover-art-6.jpg",
-  video: "-oXCMFX9H8g",
+  videoId: "-oXCMFX9H8g",
   price: 30,
   description:[
     "Control es un juego de acción y aventura desarrollado por Remedy Entertainment y publicado por 505 Games. En este título, los jugadores asumen el papel de Jesse Faden, la nueva Directora del Federal Bureau of Control (FBC), una agencia secreta encargada de investigar fenómenos paranormales.",
@@ -1548,7 +1548,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.b8c994de179186865fb2f5c09e3a3bfb?rik=9H3xRGdG44S6hA&riu=http%3a%2f%2fwww.gamersglobal.de%2fsites%2fgamersglobal.de%2ffiles%2fnews%2fteaser%2f803%2fNieR-Automata_201604_SS_2B9SA2_01_ONLINE.jpg&ehk=r7im%2bMBuSZ8SoSm3K8seFvY8%2fq1iBHyRRq9%2fJMZ0jsw%3d&risl=&pid=ImgRaw&r=0",
   ],
   cover:"https://gameday.bg/wp-content/uploads/2020/11/nier-automata-goty-pc-01-600x835.jpg",
-  video: "wJxNhJ8fjFk",
+  videoId: "wJxNhJ8fjFk",
   price: 40,
   description:[
     "Nier: Automata es un juego de rol de acción desarrollado por PlatinumGames y publicado por Square Enix. Ambientado en un futuro distópico donde la humanidad ha sido expulsada de la Tierra por invasores mecánicos, el juego sigue la historia de androides de combate creados por los humanos para luchar contra las máquinas.",
@@ -1583,7 +1583,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.1873cca7f4ab9d440d072bf1de3bc402?rik=%2fw5E1RwN%2bpodzA&pid=ImgRaw&r=0",
   ],
   cover:"https://1.bp.blogspot.com/-uZ6c1w8RAzw/XkYOeXeJQUI/AAAAAAAADWA/jjwZBulmRTMuMTSFvS61qGbcKsIOZj5jwCLcBGAsYHQ/s1600/monster-hunter-world-cover.jpg",
-  video: "SE_FnuD9zJc",
+  videoId: "SE_FnuD9zJc",
   price: 30,
   description:[
    "Monster Hunter: World es un juego de acción y caza desarrollado y publicado por Capcom. Situado en un vasto mundo lleno de monstruos feroces y vida salvaje, el juego sigue la historia de cazadores que buscan desafiar y derrotar a las criaturas más grandes y peligrosas del mundo.",
@@ -1617,7 +1617,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.47a8d2a9ac8a08ebe0a9fc71979331d5?rik=TYnIIBUq6xPkiQ&riu=http%3a%2f%2fimages.gamersyde.com%2fimage_star_wars_jedi_fallen_order-40409-4090_0001.jpg&ehk=SadaFoPOtsC62DW6AfvOEScIbj6ehL8vdj3xhFjBjvk%3d&risl=&pid=ImgRaw&r=0",
   ],
   cover:"https://i.blogs.es/0f6803/jfo_key_deluxe_rgb/1366_2000.jpeg",
-  video: "0GLbwkfhYZk",
+  videoId: "0GLbwkfhYZk",
   price: 60,
   description:[
     "Star Wars Jedi: Fallen Order es un juego de acción y aventura desarrollado por Respawn Entertainment y publicado por Electronic Arts. Ambientado en el universo de Star Wars, el juego sigue la historia de Cal Kestis, un joven padawan que sobrevive a la Orden 66 y busca reconstruir la Orden Jedi mientras lucha contra el Imperio Galáctico.",
@@ -1651,7 +1651,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.5312d0ce838a39a37a97b609f539a83e?rik=%2fRrJhSKtweOTRw&riu=http%3a%2f%2fcdn.wccftech.com%2fwp-content%2fuploads%2f2017%2f10%2fCuphead-coop.jpg&ehk=6da98lSB4NOPthni6iX0MucodVvrB%2bLm%2f76EWulEuTo%3d&risl=&pid=ImgRaw&r=0",
   ],
   cover:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/ae06dc63-c2dc-4715-a84e-624ca36052b7/dc05jjr-77d2bedb-512e-4d0c-af9c-badf1f85b638.jpg",
-  video: "NN-9SQXoi50",
+  videoId: "NN-9SQXoi50",
   price: 20,
   description:[
     "Cuphead es un juego de plataformas y acción desarrollado por StudioMDHR Entertainment. Inspirado en los clásicos dibujos animados de los años 30, el juego sigue las desventuras de Cuphead y Mugman, dos tazas con forma de taza que deben enfrentarse a una serie de jefes para saldar una deuda con el diablo.",
@@ -1685,7 +1685,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/OIP.w-03ZksivGSXJwHm9FYlJAHaEK?rs=1&pid=ImgDetMain",
   ],
   cover:"https://assets.vg247.com/current/2019/02/apex_legends_main_art_2.jpg",
-  video: "UMJb_mkqynU",
+  videoId: "UMJb_mkqynU",
   price: 0,
   description:[
     "Apex Legends es un juego de disparos en primera persona desarrollado por Respawn Entertainment y publicado por Electronic Arts. Ambientado en el universo Titanfall, el juego se centra en el género de battle royale, donde los jugadores compiten en partidas multijugador para ser el último equipo en pie en un campo de batalla lleno de acción.",
@@ -1719,7 +1719,7 @@ async function seedVideogames (){
     "https://steamcdn-a.akamaihd.net/steam/apps/257850/ss_0875859b9cf2db668a658d26c9a783e7765631a5.1920x1080.jpg?t=1500086492",
   ],
   cover:"https://www.mobygames.com/images/covers/l/354283-hyper-light-drifter-playstation-4-front-cover.jpg",
-  video: "uYZ8mrnb_wg",
+  videoId: "uYZ8mrnb_wg",
   price: 19.99,
   description:[
    "Hyper Light Drifter es un juego de rol y acción desarrollado por Heart Machine. Ambientado en un mundo post-apocalíptico y misterioso, el juego sigue la historia de un Drifter, un guerrero errante en busca de conocimiento y una cura para una enfermedad mortal.",
@@ -1753,7 +1753,7 @@ async function seedVideogames (){
     "https://th.bing.com/th/id/R.043f329ea152996a623806c32b946162?rik=NKgelk%2fOl06Gpg&pid=ImgRaw&r=0",
   ],
   cover:"https://th.bing.com/th/id/R.b79bdfea7e63169282d15f70c01cb41f?rik=8KxDkOSOn5Dcdg&pid=ImgRaw&r=0",
-  video: "yQxwbZsL14Y",
+  videoId: "yQxwbZsL14Y",
   price: 14.99,
   description:[
     "Hollow Knight es un juego de acción y aventura desarrollado y publicado por Team Cherry. Ambientado en un vasto y misterioso mundo subterráneo, el juego sigue la historia de un pequeño caballero en su viaje para explorar las ruinas de Hallownest, enfrentándose a peligros y desentrañando sus secretos.",
