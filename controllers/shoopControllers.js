@@ -16,6 +16,7 @@ async function create(req, res) {
     });
     res.json(await newShop.populate("user videogames paymentMethod"));
   } catch (err) {
+    console.log(err)
     res.status(500).json("error del servidor");
   }
 }
