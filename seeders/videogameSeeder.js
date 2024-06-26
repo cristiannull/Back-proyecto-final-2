@@ -8,7 +8,7 @@ async function seedVideogames (){
   name: "Rocket League",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "66484727a7e41a4b4a090ac1",
-  gender: "6647c2b7a55c56098a0045b7",
+  gender: "667a44489260c47b462a9acd",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -74,7 +74,7 @@ async function seedVideogames (){
   name: "Roblox",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "66484719a7e41a4b4a090abf",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c916d5b0a90daa03fe2f",
   image: [
@@ -106,7 +106,7 @@ async function seedVideogames (){
   name: "Minecraft",
   gamemode: "6647baff9c8f74c7a883b5b0",
   pegi: "66484719a7e41a4b4a090abf",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a3eeb8039be59161eb637",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -141,7 +141,7 @@ async function seedVideogames (){
   name: "Terraria",
   gamemode: "6647baff9c8f74c7a883b5b0",
   pegi: "66484719a7e41a4b4a090abf",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c929d5b0a90daa03fe31",
   image: [
@@ -175,7 +175,7 @@ async function seedVideogames (){
   name: "Portal 2",
   gamemode: "6647baff9c8f74c7a883b5b0",
   pegi: "66484719a7e41a4b4a090abf",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1d3a12c3b76a4dc04ef4",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c916d5b0a90daa03fe2f",
   image: [
@@ -379,7 +379,7 @@ async function seedVideogames (){
   name: "Call of Duty Black Ops II",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "6647c2c0a55c56098a0045b9",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c929d5b0a90daa03fe31",
   image: [
@@ -517,7 +517,7 @@ async function seedVideogames (){
   name: "The Legend of Zelda: Breath of the Wild",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -552,7 +552,7 @@ async function seedVideogames (){
   name: "Minecraft Dungeons",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -620,7 +620,7 @@ async function seedVideogames (){
   name: "Super Mario Odyssey",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -654,7 +654,7 @@ async function seedVideogames (){
   name: "Red Dead Redemption 2",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1b39dd02289afc20d218",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -824,7 +824,7 @@ async function seedVideogames (){
   name: "Animal Crossing: New Horizons",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -960,7 +960,7 @@ async function seedVideogames (){
   name: "Assassin's Creed Valhalla",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1062,7 +1062,7 @@ async function seedVideogames (){
   name: "Among Us",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1bed62299d1cc5339373",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1096,7 +1096,7 @@ async function seedVideogames (){
   name: "Ghost of Tsushima",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1164,7 +1164,7 @@ async function seedVideogames (){
   name: "Splatoon 2",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a19d75a9c4856b2a85504",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1198,7 +1198,7 @@ async function seedVideogames (){
   name: "Persona 5",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1b39dd02289afc20d218",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1232,7 +1232,7 @@ async function seedVideogames (){
   name: "Final Fantasy VII Remake",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1d74a1f46f310a7c8008",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1266,7 +1266,7 @@ async function seedVideogames (){
   name: "Sekiro: Shadows Die Twice",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1301,7 +1301,7 @@ async function seedVideogames (){
   name: "Mario Kart 8 Deluxe",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a4481700ae902f877064f",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1335,7 +1335,7 @@ async function seedVideogames (){
   name: "Horizon Zero Dawn",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1369,7 +1369,7 @@ async function seedVideogames (){
   name: "Bloodborne",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1404,7 +1404,7 @@ async function seedVideogames (){
   name: "The Elder Scrolls V: Skyrim",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1dc306d8dc892b3f5c66",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1472,7 +1472,7 @@ async function seedVideogames (){
   name: "Celeste",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1506,7 +1506,7 @@ async function seedVideogames (){
   name: "Control",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1b39dd02289afc20d218",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1575,7 +1575,7 @@ async function seedVideogames (){
   name: "Monster Hunter: World",
   gamemode: ["6647bb759c8f74c7a883b5b4", "6647baff9c8f74c7a883b5b0"],
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1711,7 +1711,7 @@ async function seedVideogames (){
   name: "Hyper Light Drifter",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
@@ -1745,7 +1745,7 @@ async function seedVideogames (){
   name: "Hollow Knight",
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "6648473ba7e41a4b4a090ac3",
-  gender: "6647c2afa55c56098a0045b5",
+  gender: "667a1a826029915da03f68ee",
   theme: "66484bf01593a60f58e0c0a3",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
