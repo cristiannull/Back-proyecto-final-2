@@ -4,6 +4,7 @@ import seedUsers from "./seeders/userSeeder.js";
 import seedRol from "./seeders/roleSeeder.js";
 import seedGameModes from "./seeders/gameModeSeeder.js";
 import seedGenders from "./seeders/genderSeeder.js";
+import seedTypeOffer from "./seeders/typeOfferSeeder.js";
 
 const MONGODB_URI = "mongodb://localhost:27017/BaseDeDatosProyectoFinal";
 
@@ -20,6 +21,7 @@ const seedDatabase = async () => {
     await seedRol();
     await seedGameModes();
     await seedGenders ();
+    await seedTypeOffer();
 
     console.log("Seeding complete");
     mongoose.connection.close();

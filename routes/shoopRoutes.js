@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.post(
   "/api/shoop",
-  expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),shoopValidations,errorsIsEmpty,
+  expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),//,errorsIsEmpty,
   shoopControllers.create
 );
 

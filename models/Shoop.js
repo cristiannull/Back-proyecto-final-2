@@ -1,31 +1,34 @@
 import mongoose from "../config/mongoose.config.js";
 
 const shoopSchema = mongoose.Schema({
-  user: [
+  user: 
     {
       type: mongoose.Types.ObjectId,
       required: true,
       ref: "User",
     },
-  ],
+  
 
   videogames: [
-    {
-      type: mongoose.Types.ObjectId,
+   {
+    videogameId:{
+      type:mongoose.Types.ObjectId,
       required: true,
-      ref: "VideoGames",
+      ref:"VideoGames"
     },
+    quantity:Number
+   }
   ],
 
   total: Number,
 
-  paymentMethod: [
+  paymentMethod:
     {
       type: mongoose.Types.ObjectId,
       required: true,
       ref: "PaymentMethod",
     },
-  ],
+  
 });
 
 const ShoopSchema = mongoose.model("Shoop", shoopSchema);
