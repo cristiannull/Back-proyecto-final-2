@@ -4,19 +4,20 @@ import VideoGame from "../models/VideoGame.js";
 async function create(req, res) {
   try {
     let total = 0;
-    for (const videogameId of req.body.videogames) {
-      const search = await VideoGame.findById(videogameId);
-      total = total + search.price;
+    for (let videogame of req.body.videogames) {
+      const search = await VideoGame.findById(videogame.videogameId);
+      const quantity = videogame.quantity;
+      total = total += search.price * quantity;
     }
     const newShop = await Shoop.create({
-      user: req.body.user,
+      user: req.auth.sub,
       videogames: req.body.videogames,
       total: total,
       paymentMethod: req.body.paymentMethod,
     });
     res.json(await newShop.populate("user videogames paymentMethod"));
   } catch (err) {
-    console.log(err)
+    console.log(err);
     res.status(500).json("error del servidor");
   }
 }
