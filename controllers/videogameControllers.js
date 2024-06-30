@@ -19,9 +19,8 @@ async function create(req, res) {
       developer: req.body.developer,
       description: req.body.description,
       videoId: req.body.videoId,
-      systemRequirements:req.body.systemRequirements,
+      systemRequirements: req.body.systemRequirements,
       typeoffer: req.body.typeoffer,
-      videogamereview: req.body.videogamereview
     });
     res.json(
       await newGame.populate("gamemode pegi gender theme developer typeoffer")
@@ -150,12 +149,13 @@ async function update(req, res) {
       req.body.description || gameEncontrado.description;
     gameEncontrado.videoId = req.body.videoId || gameEncontrado.videoId;
     gameEncontrado.systemRequirements =
-    req.body.systemRequirements || gameEncontrado.systemRequirements;
+      req.body.systemRequirements || gameEncontrado.systemRequirements;
     gameEncontrado.typeoffer = req.body.typeoffer || gameEncontrado.typeoffer;
-    gameEncontrado.videogamereview = req.body.videogamereview || gameEncontrado.videogamereview;
-    
+    gameEncontrado.videogamereview =
+      req.body.videogamereview || gameEncontrado.videogamereview;
+
     await gameEncontrado.save();
-    res.json(gameEncontrado);
+    res.status(200).json(gameEncontrado);
   } catch (err) {
     res.status(500).json("Error del Servidor");
   }
@@ -164,7 +164,7 @@ async function update(req, res) {
 async function destroy(req, res) {
   try {
     await videoGame.findByIdAndDelete(req.params.id);
-    res.json("Videojuego elimidado");
+    res.status(200).json("Videojuego elimidado");
   } catch (err) {
     res.status(500).json("Error del Servidor :(");
   }
