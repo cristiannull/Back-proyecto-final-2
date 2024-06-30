@@ -1,22 +1,50 @@
 import User from "../models/User.js";
 import bcrypt from "bcryptjs";
+import Rol from "../models/Role.js";
+import jwt from "jsonwebtoken";
 
 async function create(req, res) {
   try {
-    const password = req.body.password;
+    const { firstname, lastname, email, password, age } = req.body;
+
+    if (!firstname || !lastname || !email || !password || !age) {
+      return res.status(400).json({
+        message:
+          "Todos los campos son obligatorios y age debe ser un número válido",
+      });
+    }
+
     const hash = await bcrypt.hash(password, 10);
+    const defaultRol = await Rol.findOne({ name: "user" });
+
+    if (!defaultRol) {
+      return res
+        .status(500)
+        .json({ message: "Rol predeterminado no encontrado" });
+    }
+
     const newUser = await User.create({
-      firstname: req.body.firstname,
-      lastname: req.body.lastname,
-      email: req.body.email,
+      firstname,
+      lastname,
+      email,
       password: hash,
-      age: req.body.age,
-      rol: req.body.rol,
+      age: Number(age),
+      rol: [defaultRol._id],
     });
-    res.json(await newUser.populate("rol"));
+
+    const tokenPayload = {
+      sub: User.id,
+      iat: Date.now(),
+    };
+    const token = jwt.sign(tokenPayload, process.env.JWT_SECRET);
+
+    res.json({
+      user: await newUser.populate("rol"),
+      token,
+    });
   } catch (err) {
     console.log(err);
-    res.status(500).json("error del servidor");
+    res.status(500).json("Error del servidor");
   }
 }
 

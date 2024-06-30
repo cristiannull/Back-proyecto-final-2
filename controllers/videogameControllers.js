@@ -21,7 +21,6 @@ async function create(req, res) {
       videoId: req.body.videoId,
       systemRequirements: req.body.systemRequirements,
       typeoffer: req.body.typeoffer,
-      videogamereview: req.body.videogamereview,
     });
     res.json(
       await newGame.populate("gamemode pegi gender theme developer typeoffer")
