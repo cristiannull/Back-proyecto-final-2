@@ -89,13 +89,6 @@ required: true,
       required: true,
     },
   ],
-
-  videogamereview:[
-    {
-      type: String,
-    },
-  ],
-
 });
 
 

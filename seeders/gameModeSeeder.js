@@ -31,6 +31,7 @@ name:"Local and group",
       name:"Single player",
       },
   ];
+  await GameMode.create(gamemodes); 
   console.log("GameModes creadas re melas rey");
 }
 

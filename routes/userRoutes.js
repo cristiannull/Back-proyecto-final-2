@@ -6,20 +6,15 @@ import userValidations from "../middlewares/validateUser.js";
 import errorsIsEmpty from "../middlewares/errorsIsEmpty.js";
 const router = express.Router();
 
-router.post(
-  "/api/users",
-  userValidations,
-  errorsIsEmpty,
-  userControllers.create
-);
+router.post("/api/auth/register", userControllers.create);
 router.get(
   "/api/users/:id",
-  expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),
+ /*  expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }), */
   userControllers.find
 );
 router.get(
   "/api/users",
-  expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),
+  /* expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }), */
   userControllers.list
 );
 router.patch(
@@ -29,7 +24,7 @@ router.patch(
 );
 router.delete(
   "/api/users/:id",
-  expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),
+ /*  expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }), */
   userControllers.destroy
 );
 router.post(

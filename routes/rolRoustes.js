@@ -21,12 +21,12 @@ router.get(
 );
 router.patch(
   "/api/rol/:id",
-  expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),
+  /* expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }), */
   rolControllers.update
 );
 router.get(
   "/api/rol",
-  expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }),
+  /* expressjwt({ algorithms: ["HS256"], secret: process.env.JWT_SECRET }), */
   rolControllers.list
 );
 router.delete(
