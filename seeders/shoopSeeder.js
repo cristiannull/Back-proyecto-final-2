@@ -1,6 +1,8 @@
 import Shoop from "../models/Shoop.js";
 import VideoGame from "../models/VideoGame.js";
 
+async function seedShoop () {
+
 const ordersToCreate = [
   {
     _id: "6646a3c149427943de7ac02f",
@@ -32,8 +34,8 @@ const ordersToCreate = [
     videogames: ["66469710cf29fe32661290ef", "66469625cf29fe32661290e1"],
   },
 ];
-
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+await Shoop.create(ordersToCreate);
+console.log("Shops creadas bien, o no? na mentira ;) ");
 
 for (let orderToCreate of ordersToCreate) {
   const videoGamesList = await VideoGame.find({
@@ -53,4 +55,10 @@ for (let orderToCreate of ordersToCreate) {
     total: totalPrice,
   });
 }
-process.exit();
+}
+
+export default seedShoop
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+
+
+
