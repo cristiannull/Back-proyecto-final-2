@@ -12,7 +12,9 @@ async function login(req, res) {
           sub: user.id,
           iat: Date.now(),
         };
-        const token = jwt.sign(tokenPayload, process.env.JWT_SECRET);
+        const token = jwt.sign(tokenPayload, process.env.JWT_SECRET, {
+          algorithm: "HS256",
+        });
         res.json({ token: token });
       } else {
         res.status(401).json("Tu email o contraseña son INCORRECTOS");
