@@ -44,12 +44,59 @@ async function login(req, res) {
       exp: Math.floor(Date.now() / 1000) + 60 * 60,
     };
 
-    const token = jwt.sign(tokenPayload, process.env.JWT_SECRET);
+    const token = jwt.sign(tokenPayload, process.env.JWT_SECRET, {
+      algorithm: "HS256",
+    });
 
     res.json({ token: token });
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: "Error interno del servidor" });
+  }
+}
+
+async function create(req, res) {
+  try {
+    const { firstname, lastname, email, password, age } = req.body;
+
+    if (!firstname || !lastname || !email || !password || !age) {
+      return res.status(400).json({
+        message:
+          "Todos los campos son obligatorios y age debe ser un número válido",
+      });
+    }
+
+    const hash = await bcrypt.hash(password, 10);
+    const defaultRol = await Rol.findOne({ name: "user" });
+
+    if (!defaultRol) {
+      return res
+        .status(500)
+        .json({ message: "Rol predeterminado no encontrado" });
+    }
+
+    const newUser = await User.create({
+      firstname,
+      lastname,
+      email,
+      password: hash,
+      age: Number(age),
+      rol: [defaultRol._id],
+    });
+
+    const tokenPayload = {
+      sub: User.id,
+      iat: Date.now(),
+    };
+    const token = jwt.sign(tokenPayload, process.env.JWT_SECRET);
+
+    res.json({
+      user: await newUser.populate("rol"),
+      token,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json("Error del servidor");
   }
 }
 
@@ -61,4 +108,4 @@ async function tokenIsValid(req, res) {
   }
 }
 
-export default { login, tokenIsValid };
+export default { login, create, tokenIsValid };
