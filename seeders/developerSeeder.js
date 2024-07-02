@@ -16,6 +16,10 @@ async function seedDeveloper () {
   _id: "6647c929d5b0a90daa03fe31",
   name: "Sid Meier",
 },
+{
+  _id: "668438f5e1a310a1e8086ffa",
+  name: "Hernán Baravalle",
+},
  ];
  await Developer.create(developers);
  console.log("desarrolladores creados exitocisimamente bien");
