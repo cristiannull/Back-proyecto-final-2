@@ -22,7 +22,6 @@ const shoopSchema = mongoose.Schema({
 
   paymentMethod: {
     type: mongoose.Types.ObjectId,
-    required: true,
     ref: "PaymentMethod",
   },
 });

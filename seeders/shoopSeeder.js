@@ -1,64 +1,84 @@
 import Shoop from "../models/Shoop.js";
 import VideoGame from "../models/VideoGame.js";
 
-async function seedShoop () {
-
-const ordersToCreate = [
-  {
-    _id: "6646a3c149427943de7ac02f",
-    user: "664672a4ca83a4f05f49d02e",
-    videogames: ["664695bacf29fe32661290d9", "6646960dcf29fe32661290dd"],
-  },
-  {
-    _id: "6646a3e449427943de7ac033",
-    user: "664672c6ca83a4f05f49d034",
-    videogames: ["66469632cf29fe32661290e3"],
-  },
-  {
-    _id: "6646a3e549427943de7ac037",
-    user: "664672bbca83a4f05f49d031",
-    videogames: [
-      "664696cecf29fe32661290e9",
-      "66469671cf29fe32661290e5",
-      "66469686cf29fe32661290e7",
-    ],
-  },
-  {
-    _id: "6646a3e649427943de7ac03b",
-    user: "664672d9ca83a4f05f49d03a",
-    videogames: ["66469619cf29fe32661290df", "664696e5cf29fe32661290eb"],
-  },
-  {
-    _id: "6646a3f349427943de7ac03f",
-    user: "664672e2ca83a4f05f49d03d",
-    videogames: ["66469710cf29fe32661290ef", "66469625cf29fe32661290e1"],
-  },
-];
-await Shoop.create(ordersToCreate);
-console.log("Shops creadas bien, o no? na mentira ;) ");
-
-for (let orderToCreate of ordersToCreate) {
-  const videoGamesList = await VideoGame.find({
-    _id: {
-      $in: orderToCreate.videogames,
+async function seedShoop() {
+  const shoopsToCreate = [
+    {
+      _id: "6646a3c149427943de7ac02f",
+      user: "664672a4ca83a4f05f49d02e",
+      paymentMethod: "66484fa8d185e084c7b0b12e",
+      videogames: [
+        { videogameId: "664695bacf29fe32661290d9", quantity: 1 },
+        { videogameId: "6646960dcf29fe32661290dd", quantity: 2 },
+      ],
     },
-  });
+    {
+      _id: "6646a3e449427943de7ac033",
+      user: "664672c6ca83a4f05f49d034",
+      paymentMethod: "66484fa8d185e084c7b0b12e",
+      videogames: [{ videogameId: "66469632cf29fe32661290e3", quantity: 1 }],
+    },
+    {
+      _id: "6646a3e549427943de7ac037",
+      user: "664672bbca83a4f05f49d031",
+      paymentMethod: "66484fa8d185e084c7b0b12e",
+      videogames: [
+        { videogameId: "664696cecf29fe32661290e9", quantity: 1 },
+        { videogameId: "66469671cf29fe32661290e5", quantity: 2 },
+        { videogameId: "66469686cf29fe32661290e7", quantity: 1 },
+      ],
+    },
+    {
+      _id: "6646a3e649427943de7ac03b",
+      user: "664672d9ca83a4f05f49d03a",
+      paymentMethod: "66484f8dd185e084c7b0b128",
+      videogames: [
+        { videogameId: "66469619cf29fe32661290df", quantity: 1 },
+        { videogameId: "664696e5cf29fe32661290eb", quantity: 3 },
+      ],
+    },
+    {
+      _id: "6646a3f349427943de7ac03f",
+      user: "664672e2ca83a4f05f49d03d",
+      paymentMethod: "66484fa8d185e084c7b0b12e",
+      videogames: [
+        { videogameId: "66469710cf29fe32661290ef", quantity: 1 },
+        { videogameId: "66469625cf29fe32661290e1", quantity: 2 },
+      ],
+    },
+  ];
 
-  let totalPrice = videoGamesList.reduce(
-    (accumulator, currentValue) => accumulator + currentValue.price,
-    0
-  );
-  await Shoop.create({
-    _id: orderToCreate._id,
-    user: orderToCreate.user,
-    videogames: orderToCreate.videogames,
-    total: totalPrice,
-  });
+
+for (let shoopToCreate of shoopsToCreate) {
+    const videoGameIds = shoopToCreate.videogames.map((vg) => vg.videogameId);
+    const videoGamesList = await VideoGame.find({
+      _id: { $in: videoGameIds },
+    });
+
+    let totalPrice = 0;
+
+    shoopToCreate.videogames.forEach((vg) => {
+      const videoGame = videoGamesList.find(
+        (game) => game._id.toString() === vg.videogameId.toString()
+      );
+      if (videoGame) {
+        totalPrice += videoGame.price * vg.quantity;
+      }
+    });
+
+    await Shoop.create({
+      _id: shoopToCreate._id,
+      user: shoopToCreate.user,
+      videogames: shoopToCreate.videogames.map((vg) => ({
+        videogameId: vg.videogameId,
+        quantity: vg.quantity,
+      })),
+      total: totalPrice,
+      paymentMethod: shoopToCreate.paymentMethod,
+    });
+  }
+
+  console.log("shoops creados exitocisimamente bien!!");
 }
-}
 
-export default seedShoop
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
-
-
-
+export default seedShoop;

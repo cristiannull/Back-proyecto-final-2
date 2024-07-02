@@ -151,8 +151,6 @@ async function update(req, res) {
     gameEncontrado.systemRequirements =
       req.body.systemRequirements || gameEncontrado.systemRequirements;
     gameEncontrado.typeoffer = req.body.typeoffer || gameEncontrado.typeoffer;
-    gameEncontrado.videogamereview =
-      req.body.videogamereview || gameEncontrado.videogamereview;
 
     await gameEncontrado.save();
     res.status(200).json(gameEncontrado);

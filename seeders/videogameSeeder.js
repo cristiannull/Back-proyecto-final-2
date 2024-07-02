@@ -9,7 +9,7 @@ async function seedVideogames (){
   gamemode: "667a0facbb334619d489172c",
   pegi: "66484727a7e41a4b4a090ac1",
   gender: "667a44489260c47b462a9acd",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c121593a60f58e0c0a7",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://m.media-amazon.com/images/M/MV5BMWE1NjRiMGEtMTUyMy00ODVkLWE2OWMtY2VjZjc3OGEwN2Q5XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg",
@@ -42,7 +42,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c929d5b0a90daa03fe31",
   image: [
     "https://cdn1.epicgames.com/offer/3ddd6a590da64e3686042d108968a6b2/EGS_GodofWar_SantaMonicaStudio_S2_1200x1600-fbdf3cbc2980749091d52751ffabb7b7_1200x1600-fbdf3cbc2980749091d52751ffabb7b7",
@@ -75,7 +75,7 @@ async function seedVideogames (){
   gamemode: "667a100a86306cb5cd120f7f",
   pegi: "6648470ca7e41a4b4a090abd",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c916d5b0a90daa03fe2f",
   image: [
     "https://assetsio.gnwcdn.com/co5u9i.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
@@ -107,7 +107,7 @@ async function seedVideogames (){
   gamemode: "667a0f04858fd4b34849958e",
   pegi: "6648470ca7e41a4b4a090abd",
   gender: "667a3eeb8039be59161eb637",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://image.api.playstation.com/vulcan/img/cfn/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.png",
@@ -142,7 +142,7 @@ async function seedVideogames (){
   gamemode: "667a0f04858fd4b34849958e",
   pegi: "66484719a7e41a4b4a090abf",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "6682b48f6e737adf9e6b047f",
   developer: "6647c929d5b0a90daa03fe31",
   image: [
     "https://images.g2a.com/300x400/1x1x1/terraria-steam-gift-global-i10000000238003/5ebbabf646177c06a555f152",
@@ -208,7 +208,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "6682b48f6e737adf9e6b047f",
   developer: "6647c916d5b0a90daa03fe2f",
   image: [
     "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/aZKLRcjaZ8HL03ODxYMZDfaH.png",
@@ -243,7 +243,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "6682b48f6e737adf9e6b047f",
   developer: "6647c929d5b0a90daa03fe31",
   image: [
     "https://m.media-amazon.com/images/M/MV5BODUwNWY5YjctNDZkNy00ZTY1LWEzMzItZGVkYTllOWVjOTc3XkEyXkFqcGdeQXVyNjU4NTIxNzI@._V1_FMjpg_UX1000_.jpg",
@@ -414,7 +414,7 @@ async function seedVideogames (){
   gamemode: "667a0f04858fd4b34849958e",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c916d5b0a90daa03fe2f",
   image: [
     "https://th.bing.com/th/id/R.088d596111ae3357718c84b63e9fbcef?rik=8q6rIco0f32BBg&pid=ImgRaw&r=0",
@@ -449,7 +449,7 @@ async function seedVideogames (){
   gamemode: "667a0f04858fd4b34849958e",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://i.pinimg.com/originals/bf/27/84/bf278488ae0e3a42c1621345c5e44f57.jpg",
@@ -518,7 +518,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "66484719a7e41a4b4a090abf",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://zelda.nintendo.com/breath-of-the-wild/assets/media/wallpapers/tablet-1.jpg",
@@ -587,7 +587,7 @@ async function seedVideogames (){
   gamemode: "667a0f04858fd4b34849958e",
   pegi: "66484719a7e41a4b4a090abf",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "6682b48f6e737adf9e6b047f",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://assetsio.gnwcdn.com/co2ekt.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
@@ -621,7 +621,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648470ca7e41a4b4a090abd",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/R.b97b172584c13f0fdf97233e462862be?rik=y1n8RGX3Tqo7sQ&pid=ImgRaw&r=0",
@@ -655,7 +655,7 @@ async function seedVideogames (){
   gamemode: "667a0f04858fd4b34849958e",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "667a1b39dd02289afc20d218",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://hardzone.es/app/uploads-hardzone.es/2018/10/Red_dead_redemption_2-930x487.jpg",
@@ -689,7 +689,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://www.wallpaperflare.com/static/392/775/711/the-witcher-3-wild-hunt-witcher-wild-hunt-wallpaper.jpg",
@@ -757,7 +757,7 @@ async function seedVideogames (){
   gamemode: "667a100a86306cb5cd120f7f",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "6682b48f6e737adf9e6b047f",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/OIP.eEFqCaZ5WrLQmdVCOnfHCAAAAA?rs=1&pid=ImgDetMain",
@@ -791,7 +791,7 @@ async function seedVideogames (){
   gamemode: "667a0f04858fd4b34849958e",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/OIP.Wzr8nEGQLRLrPJk1ZUdJPQHaD4?rs=1&pid=ImgDetMain",
@@ -825,7 +825,7 @@ async function seedVideogames (){
   gamemode: "6647bb759c8f74c7a883b5b4",
   pegi: "664846fda7e41a4b4a090abb",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/OIP.lrRCxMRjchSpEOb3dlGyhQEsCo?rs=1&pid=ImgDetMain",
@@ -859,7 +859,7 @@ async function seedVideogames (){
   gamemode: "667a0f04858fd4b34849958e",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: ["66484bf01593a60f58e0c0a3", "6682b4a56e737adf9e6b0481"],
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/OIP.B_ez2BKkakSwe8KlxZq31wHaEK?w=310&h=180&c=7&r=0&o=5&pid=1.7",
@@ -893,7 +893,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/R.073f31b561a32112470747c4dac0556d?rik=Bo%2fQaqdr7Ghwww&pid=ImgRaw&r=0",
@@ -961,7 +961,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/R.32f33c3f26f1044ff2ab5ebda5132b3e?rik=y22MNLr3%2bh9O5w&pid=ImgRaw&r=0",
@@ -995,7 +995,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: ["6682b48f6e737adf9e6b047f", "6682b4a56e737adf9e6b0481"],
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://www.gamerfocus.co/wp-content/uploads/2021/01/revillage.png",
@@ -1029,7 +1029,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "66484719a7e41a4b4a090abf",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "6682b48f6e737adf9e6b047f",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://ninten-switch.com/wp-content/uploads/2022/12/hades-ii-announce-for-the-game-awards-2022.jpg",
@@ -1063,7 +1063,7 @@ async function seedVideogames (){
   gamemode: "667a100a86306cb5cd120f7f",
   pegi: "6648470ca7e41a4b4a090abd",
   gender: "667a1bed62299d1cc5339373",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c121593a60f58e0c0a7",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://metropolitanmagazine.it/wp-content/uploads/2020/11/among-us-cover-1068x534.jpg",
@@ -1097,7 +1097,7 @@ async function seedVideogames (){
   gamemode: "667a0f04858fd4b34849958e",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/OIP.43In1DavhOep4vNZ25JW4QHaEK?rs=1&pid=ImgDetMain",
@@ -1127,11 +1127,11 @@ async function seedVideogames (){
 
 {
   _id: "664695bacf29fe32661290ec",
-  name: "God of War ",
+  name: "God of War",
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/R.0c2bbbc5d0759d2eceade56658704ae2?rik=jmkk3Uqtutbt0g&riu=http%3a%2f%2fselectstartgames.files.wordpress.com%2f2010%2f05%2fgod-of-war-iii_2010_03-27-10_03.jpg&ehk=fYx47kNNA2EeNShF4C2ofiM4MdWKk9POi7yCPsYCWWU%3d&risl=&pid=ImgRaw&r=0",
@@ -1199,7 +1199,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "66484727a7e41a4b4a090ac1",
   gender: "667a1b39dd02289afc20d218",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484be21593a60f58e0c0a1",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://wallpaperaccess.com/full/2228899.png",
@@ -1267,7 +1267,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://www.mobygames.com/images/covers/l/547415-sekiro-shadows-die-twice-windows-front-cover.jpg",
@@ -1302,7 +1302,7 @@ async function seedVideogames (){
   gamemode: "6647baff9c8f74c7a883b5b0",
   pegi: "664846fda7e41a4b4a090abb",
   gender: "667a4481700ae902f877064f",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c121593a60f58e0c0a7",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/OIP.YT9Yj5HGZyMHPNGHgtuDyQHaEK?rs=1&pid=ImgDetMain",
@@ -1336,7 +1336,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "66484727a7e41a4b4a090ac1",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/R.d995230ecc0850cdaa55933fe562256e?rik=oG4zP6JMw6On4g&pid=ImgRaw&r=0",
@@ -1370,7 +1370,7 @@ async function seedVideogames (){
   gamemode: "667a0facbb334619d489172c",
   pegi: "66484727a7e41a4b4a090ac1",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "6682b4a56e737adf9e6b0481",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/R.d436b06aa4f89a4c230a003bb74f404b?rik=mqDhuZRNlrWqkA&pid=ImgRaw&r=0",
@@ -1405,7 +1405,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648473ba7e41a4b4a090ac3",
   gender: "667a1dc306d8dc892b3f5c66",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/R.760825390d76627719e0496ca280e2ca?rik=Y1cNSIQ2k46T5w&riu=http%3a%2f%2fportal.zwame.pt%2fwp-content%2fuploads%2f2011%2f08%2felder-scrolls-skyrim.jpg&ehk=RJEBy1gYIWNoyi%2bcIgwEDQtGd0tj07M3gOoG0medQzc%3d&risl=&pid=ImgRaw&r=0",
@@ -1439,7 +1439,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "66484727a7e41a4b4a090ac1",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://ovicio.com.br/wp-content/uploads/dark_souls_3_bonus_pre_venda_2.jpg",
@@ -1473,7 +1473,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648470ca7e41a4b4a090abd",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c041593a60f58e0c0a5",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://gaming-cdn.com/images/products/8003/screenshot/celeste-pc-mac-juego-steam-wallpaper-1.jpg?v=1652434948",
@@ -1576,7 +1576,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c", 
   pegi: "66484727a7e41a4b4a090ac1",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/R.3efcd4b5acf08ed17df6ddcb10b9cb4d?rik=DXXxGw0HpHVEmw&pid=ImgRaw&r=0",
@@ -1610,7 +1610,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "66484727a7e41a4b4a090ac1",
   gender: "6647c2afa55c56098a0045b5",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c121593a60f58e0c0a7",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/R.12149cf708e4cfd86faa5cc201aa8a8d?rik=QcxlZAUZY2BKjA&pid=ImgRaw&r=0",
@@ -1746,7 +1746,7 @@ async function seedVideogames (){
   gamemode: "667a103e1e8e1ad8cc7ffc9c",
   pegi: "6648470ca7e41a4b4a090abd",
   gender: "667a1a826029915da03f68ee",
-  theme: "66484bf01593a60f58e0c0a3",
+  theme: "66484c191593a60f58e0c0a9",
   developer: "6647c8f0d5b0a90daa03fe2d",
   image: [
     "https://th.bing.com/th/id/OIP.iXn2CtE5BDXaIyIuFuvkUwHaEK?w=1500&h=844&rs=1&pid=ImgDetMain",
