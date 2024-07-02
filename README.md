@@ -8,86 +8,167 @@ Este proyecto consiste en una aplicación desarrollada con Express.js que gestio
 El proyecto está estructurado de la siguiente manera:
 
 Back-proyecto-final/
+
 │
+
 ├── config/
+
 │ ├── mongoose.config.js
+
 │ └── multer.config.js
+
 │
+
 ├── controllers/
+
 │ ├── authControllers.js
+
 │ ├── adminControllers.js
+
 │ ├── userControllers.js
+
 │ ├── videogameControllers.js
+
 │ ├── gameModeControllers.js
+
 │ ├── developerControllers.js
+
 │ ├── shoopControllers.js
+
 │ ├── genderControllers.js
+
 │ ├── pegiControllers.js
+
 │ ├── themeControllers.js
+
 │ ├── paymentMethodControllers.js
+
 │ ├── rolControllers.js
+
 │ └── typeOfferControllers.js
+
 │
+
 ├── middlewares/
+
 │ ├── errorsIsEmpty.js
+
 │ ├── validateGameMode.js
+
 │ ├── validatedeveloper.js
+
 │ ├── validateGender.js
+
 │ ├── validatePegi.js
+
 │ ├── validateTheme.js
+
 │ ├── validatePaymentMethod.js
+
 │ ├── validateRole.js
+
 │ ├── validateTypeOffer.js
+
 │ ├── validateUser.js
+
 │ ├── validateVideogame.js
+
 │ └── validateShoop.js
+
 │
+
 ├── models/
+
 │ ├── Developer.js
+
 │ ├── GameMode.js
+
 │ ├── Gender.js
+
 │ ├── PaymentMethod.js
+
 │ ├── Pegi.js
+
 │ ├── Role.js
+
 │ ├── Shoop.js
+
 │ ├── Theme.js
+
 │ ├── TypeOffer.js
+
 │ ├── User.js
+
 │ └── Videogame.js
+
 │
+
 ├── routes/
+
 │ ├── developerRoutes.js
+
 │ ├── gameModeRoutes.js
+
 │ ├── genderRoutes.js
+
 │ ├── pegiRoutes.js
+
 │ ├── paymentMethodRoutes.js
+
 │ ├── rolRoutes.js
+
 │ ├── shoopRoutes.js
+
 │ ├── themeRoutes.js
+
 │ ├── typeOfferRoutes.js
+
 │ ├── userLoginRoutes.js
+
 │ ├── userRoutes.js
+
 │ └── videogameRoutes.js
+
 │
+
 ├── seeders/
+
 │ ├── developerSeeder.js
+
 │ ├── gameModeSeeder.js
+
 │ ├── genderSeeder.js
+
 │ ├── pegiSeeder.js
+
 │ ├── paymentMethodSeeder.js
+
 │ ├── roleSeeder.js
+
 │ ├── shoopSeeder.js
+
 │ ├── themeSeeder.js
+
 │ ├── typeOfferSeeder.js
+
 │ ├── videogameSeeder.js
+
 │ └── userSeeder.js
+
 │
+
 │
+
 ├── .env
+
 ├── .gitignore
+
 ├── README.md
+
 ├── package.json
+
 ├── seeders.js
+
 └── server.js
 
 ## Tecnologías Utilizadas
