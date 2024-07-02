@@ -75,6 +75,7 @@ async function update(req, res) {
       req.body.firstname || usuarioEncontrado.firstname;
     usuarioEncontrado.lastname =
       req.body.lastname || usuarioEncontrado.lastname;
+    usuarioEncontrado.age = req.body.age || usuarioEncontrado.age;
     usuarioEncontrado.email = req.body.email || usuarioEncontrado.email;
     usuarioEncontrado.rol = req.body.rol || usuarioEncontrado.rol;
 

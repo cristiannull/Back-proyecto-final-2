@@ -45,7 +45,7 @@ async function update(req, res) {
 
 async function destroy(req, res) {
   try {
-    await Developer.findByIdAndDelete(req.param.id);
+    await Developer.findByIdAndDelete(req.params.id);
     res.status(200).json("developer eliminado");
   } catch (err) {
     res.status(500).json("Error del servidor");

@@ -21,17 +21,17 @@ const seedDatabase = async () => {
     });
     console.log("Connected to MongoDB");
 
-    await seedVideogames();
-    await seedUsers();
     await seedRol();
     await seedGameModes();
-    await seedGenders ();
+    await seedGenders();
     await seedTypeOffer();
     await seedPegi();
     await seedTheme();
     await seedPaymentMethod();
     await seedDeveloper();
     await seedShoop();
+    await seedUsers();
+    await seedVideogames();
 
     console.log("Seeding complete");
     mongoose.connection.close();
