@@ -28,10 +28,10 @@ const seedDatabase = async () => {
     await seedPegi();
     await seedTheme();
     await seedPaymentMethod();
-    await seedDeveloper();
-    await seedShoop();
     await seedUsers();
+    await seedDeveloper();
     await seedVideogames();
+    await seedShoop();
 
     console.log("Seeding complete");
     mongoose.connection.close();

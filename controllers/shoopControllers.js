@@ -1,5 +1,6 @@
 import Shoop from "../models/Shoop.js";
 import VideoGame from "../models/VideoGame.js";
+import User from "../models/User.js";
 
 async function create(req, res) {
   try {
@@ -34,7 +35,17 @@ async function find(req, res) {
 
 async function list(req, res) {
   try {
-    const shoopList = await Shoop.find().populate("videogame user");
+    const where = {};
+    if (req.query.user) {
+      const user = await User.findById(req.query.user);
+      if (!user) {
+        return res.status(404).json({ message: "User not found" });
+      }
+      where.user = user._id;
+    }
+    const shoopList = await Shoop.find(where).populate(
+      "videogames.videogameId user paymentMethod"
+    );
     res.status(200).json(shoopList);
   } catch (err) {
     res.status(500).json("Error del Servidor");
@@ -44,6 +55,9 @@ async function list(req, res) {
 async function update(req, res) {
   try {
     const shoopEncontrado = await Shoop.findById(req.params.id);
+    if (!shoopEncontrado) {
+      return res.status(404).json({ message: "Shoop not found" });
+    }
 
     shoopEncontrado.user = req.body.user || shoopEncontrado.user;
     shoopEncontrado.videogame = req.body.videogame || shoopEncontrado.videogame;
@@ -51,7 +65,7 @@ async function update(req, res) {
     shoopEncontrado.paymentMethod =
       req.body.paymentMethod || shoopEncontrado.paymentMethod;
     await shoopEncontrado.save();
-    res.json(shoopEncontrado);
+    res.json(await shoopEncontrado.populate("videogames user paymentMethod"));
   } catch (err) {
     res.status(500).json("Error del Servidor");
   }
@@ -59,10 +73,14 @@ async function update(req, res) {
 
 async function destroy(req, res) {
   try {
-    await Shoop.findByIdAndDelete(req.params.id);
-    res.json("Compra elimidada");
+    const shoop = await Shoop.findByIdAndDelete(req.params.id);
+    if (!shoop) {
+      return res.status(404).json({ message: "Shoop not found" });
+    }
+    res.json({ message: "Shoop deleted successfully" });
   } catch (err) {
-    res.status(500).json("Error del Servidor");
+    console.error(err);
+    res.status(500).json({ message: "Server error" });
   }
 }
 

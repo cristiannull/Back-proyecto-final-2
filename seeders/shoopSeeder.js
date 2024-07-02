@@ -48,8 +48,7 @@ async function seedShoop() {
     },
   ];
 
-
-for (let shoopToCreate of shoopsToCreate) {
+  for (let shoopToCreate of shoopsToCreate) {
     const videoGameIds = shoopToCreate.videogames.map((vg) => vg.videogameId);
     const videoGamesList = await VideoGame.find({
       _id: { $in: videoGameIds },
@@ -63,6 +62,8 @@ for (let shoopToCreate of shoopsToCreate) {
       );
       if (videoGame) {
         totalPrice += videoGame.price * vg.quantity;
+      } else {
+        console.error(`No se encontró el videojuego con ID: ${vg.videogameId}`);
       }
     });
 

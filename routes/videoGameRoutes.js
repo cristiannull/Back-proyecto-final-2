@@ -2,7 +2,6 @@ import videogameControllers from "../controllers/videogameControllers.js";
 import express from "express";
 import fs from "fs";
 import path from "path";
-import upload from "../config/multer.config.js";
 import videogameValidations from "../middlewares/validateVideogame.js";
 import errorsIsEmpty from "../middlewares/errorsIsEmpty.js";
 
@@ -15,8 +14,8 @@ if (!fs.existsSync(uploadDir)) {
 
 router.post(
   "/api/videogame",
- /*  videogameValidations,
-  errorsIsEmpty, */
+  videogameValidations,
+  errorsIsEmpty,
   videogameControllers.create
 );
 router.get("/api/videogame/:name", videogameControllers.findName);

@@ -79,6 +79,10 @@ async function update(req, res) {
     usuarioEncontrado.email = req.body.email || usuarioEncontrado.email;
     usuarioEncontrado.rol = req.body.rol || usuarioEncontrado.rol;
 
+    if (req.body.password && req.body.password.trim() !== "") {
+      const hashedPassword = await bcrypt.hash(req.body.password, 10);
+      usuarioEncontrado.password = hashedPassword;
+    }
     await usuarioEncontrado.save();
     res.status(200).json(usuarioEncontrado);
   } catch (err) {
@@ -95,22 +99,10 @@ async function destroy(req, res) {
   }
 }
 
-async function profile(req, res) {
-  const { email } = await User.findById(req.auth.sub);
-  res.json(`Hola ${email}, te damos acceso a tu perfil`);
-}
-
-async function comprar(req, res) {
-  const { email } = await User.findById(req.auth.sub);
-  res.json(`Hola ${email}, puedes comprar cosas`);
-}
-
 export default {
   create,
   find,
   list,
   update,
   destroy,
-  profile,
-  comprar,
 };
