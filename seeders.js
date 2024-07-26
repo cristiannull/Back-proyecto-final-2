@@ -28,9 +28,9 @@ const seedDatabase = async () => {
     await seedPegi();
     await seedTheme();
     await seedPaymentMethod();
-    await seedUsers();
     await seedDeveloper();
     await seedVideogames();
+    await seedUsers();
     await seedShoop();
 
     console.log("Seeding complete");
