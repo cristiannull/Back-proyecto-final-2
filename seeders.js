@@ -11,7 +11,8 @@ import seedPaymentMethod from "./seeders/paymentMethodSeeder.js";
 import seedDeveloper from "./seeders/developerSeeder.js";
 import seedShoop from "./seeders/shoopSeeder.js";
 
-const MONGODB_URI = "mongodb://database:27017/BaseDeDatosProyectoFinal";
+const MONGODB_URI =
+  "mongodb+srv://coralcristian5:LFF5RYnTxusk8DSF@draggor.s435a61.mongodb.net/Bd-Draggor";
 
 const seedDatabase = async () => {
   try {
